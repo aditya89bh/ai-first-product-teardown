@@ -1,0 +1,17 @@
+id: cl-memory-import-experimental
+type: primary
+evidence_tier: E2
+title: "Memory import is documented as experimental and may not always work"
+origin: "https://support.claude.com/en/articles/12123587-import-and-export-your-memory-from-claude"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states: "Memory imports are experimental and still in active development, and at
+  this stage, Claude may not always successfully incorporate imported memories." Supports an
+  honest vendor caveat on the portability feature's reliability. Preserves the qualifier
+  rather than presenting the feature as fully working.
+tags: [memory, portability, reliability, caveat]
+synthetic: false
+notes: "plan=Free,Pro,Max,Team; region=global; directness=vendor-self-reported; confidence=High; product_version=experimental; expiry_sensitive=true"

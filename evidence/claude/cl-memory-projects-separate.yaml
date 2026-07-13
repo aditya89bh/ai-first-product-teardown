@@ -1,0 +1,17 @@
+id: cl-memory-projects-separate
+type: primary
+evidence_tier: E2
+title: "Each Project has a separate memory space and dedicated project summary"
+origin: "https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states: "Each project has its own separate memory space and dedicated project
+  summary, so the context within each of your projects is focused, relevant, and separate
+  from other projects." Supports a documented memory-scoping model (per-project isolation),
+  distinct from a single global memory. Relevant to the cross-product memory taxonomy.
+tags: [memory, scope, projects, isolation]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

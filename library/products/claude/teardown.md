@@ -90,7 +90,31 @@ agent behaves. These sub-areas are `Not rated`.
 
 ## 7. Memory analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/memory/framework.md`. Well documented; efficacy `[UNTESTED]`._
+
+- `[FACT]` Claude maintains an **automatic synthesised memory** across chat history
+  (ev: cl-memory-how-it-works), inspectable/editable in Settings > Capabilities
+  (ev: cl-ux-memory-settings-location).
+- `[FACT]` Memory is **scoped per Project** — each Project has a separate memory space and
+  summary (ev: cl-memory-projects-separate) — a different model from a single global memory.
+- `[FACT]` **Incognito chats** are not saved to memory or history (ev: cl-incognito).
+- `[FACT]` Memory is available on **all plans**, but adjacent **chat search is paid-only**
+  (ev: cl-chat-search-paid) — availability is plan-dependent.
+- `[FACT]` Memory is **portable**: importable from and exportable to other AI providers
+  (ev: cl-memory-import-export), though import is documented as **experimental** and "may not
+  always" work (ev: cl-memory-import-experimental).
+- `[INFERENCE]` Claude's memory model emphasises **scoping and portability** (per-project
+  isolation, incognito, cross-provider import/export), which reads as a design stance toward
+  user control and anti-lock-in (ev: cl-memory-projects-separate, cl-incognito,
+  cl-memory-import-export). Confidence: Moderate — documentation-based.
+- `[INFERENCE]` Portable memory is unusual and directly reduces switching costs — a memory
+  finding with a business-model consequence (ev: cl-memory-import-export). Confidence:
+  Moderate; import reliability is caveated (ev: cl-memory-import-experimental).
+- `[HYPOTHESIS]` Per-project memory isolation may reduce cross-context "memory bleed" that a
+  single global memory can cause — untested (route: interaction protocol §7).
+
+**Evidence gaps (memory):** whether view/edit/delete and import actually behave as documented,
+retrieval visibility, and cross-session continuity in practice are `[UNTESTED]`.
 
 ## 8. Trust and control analysis
 

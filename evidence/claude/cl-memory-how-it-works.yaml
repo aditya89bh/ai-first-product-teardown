@@ -1,0 +1,17 @@
+id: cl-memory-how-it-works
+type: primary
+evidence_tier: E2
+title: "Claude automatically summarises conversations into a synthesis across chat history"
+origin: "https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states: "Claude will automatically summarize your conversations and create a
+  synthesis of key insights across your chat history." Supports that Claude maintains an
+  automatic, synthesised memory of past chats. Retention cadence and exact contents were not
+  observed.
+tags: [memory, scope, cross-session]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

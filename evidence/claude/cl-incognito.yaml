@@ -1,0 +1,16 @@
+id: cl-incognito
+type: primary
+evidence_tier: E2
+title: "Incognito chats are not saved to memory or chat history"
+origin: "https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states: "When this mode is switched on, Claude won't remember your chats, so
+  they won't be saved to Claude's memory or your chat history." Supports a documented
+  memory-free / ephemeral chat mode. Comparable to ChatGPT Temporary Chats.
+tags: [memory, incognito, control]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"
