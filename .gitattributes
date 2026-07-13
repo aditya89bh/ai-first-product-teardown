@@ -1,0 +1,19 @@
+# Normalise line endings to LF across platforms
+* text=auto eol=lf
+
+# Explicit text types
+*.md    text
+*.py    text
+*.yaml  text
+*.yml   text
+*.json  text
+*.toml  text
+*.cfg   text
+*.txt   text
+
+# Binary types (never diff or normalise)
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.pdf   binary
