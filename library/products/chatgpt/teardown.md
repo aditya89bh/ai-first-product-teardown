@@ -44,7 +44,32 @@ records live in `evidence/chatgpt/`.
 
 ## 5. User experience analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/ux/framework.md`. Documentation-first; most in-product UX is
+`[UNTESTED]` because no authenticated chat session was used._
+
+- `[FACT]` OpenAI documents a consistent settings location for personalisation — "Settings >
+  Personalization" for both Memory and Custom Instructions (ev: cg-ux-settings-navigation).
+  Confidence: High (that it is *documented*).
+- `[FACT]` An in-context provenance affordance is documented: a "book icon below the
+  response" reveals which sources (custom instructions, past chats, files, memories)
+  personalised an answer (ev: cg-ux-memory-sources-affordance). Confidence: High that it is
+  documented.
+- `[OBS]` On the public, logged-out web surface, the pricing page presents a clear top
+  navigation and comparable plan cards with a feature-comparison table
+  (ev: cg-ux-web-nav-observed). This is the marketing surface, not the chat UX.
+- `[INFERENCE]` The documented, in-context "sources" affordance suggests a deliberate design
+  choice to make personalisation legible at the point of use rather than only in settings
+  (ev: cg-ux-memory-sources-affordance). Confidence: Moderate — inferred from documentation,
+  not observed, and the vendor notes it "may not show every factor".
+- `[HYPOTHESIS]` Placing memory and custom-instruction controls under a single
+  "Personalization" settings area may aid discoverability for users who look for
+  personalisation in one place — untested (route: interaction protocol §1, §7).
+
+**Evidence gaps (UX):** first-use orientation, input structure, output rendering, error
+states, progressive disclosure and accessibility indicators are all `[UNTESTED]` this phase
+because they require an authenticated chat session. See §13 and the interaction protocol
+(§1, §2, §6). No UX sub-area is scored negatively for missing evidence; such sub-areas are
+`Not rated`.
 
 ## 6. Agent-behaviour analysis
 

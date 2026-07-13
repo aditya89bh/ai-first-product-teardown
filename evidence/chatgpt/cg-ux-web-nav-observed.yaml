@@ -1,0 +1,18 @@
+id: cg-ux-web-nav-observed
+type: observation
+evidence_tier: E1
+title: "Public ChatGPT web pricing page presents a top navigation and plan cards (directly observed)"
+origin: "first-hand observation via in-app browser of https://chatgpt.com/pricing"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: "chatgpt-web-pricing-loggedout-2026-07-13"
+claim_support: >-
+  Reading the public, logged-out pricing page on 2026-07-13, the page presented a top nav
+  ("About, Features, Learn, Codex, Business, Pricing, Download") and per-plan cards with a
+  "Compare features across plans" table. Supports a direct observation of the public
+  marketing/pricing surface layout. It does NOT evidence the in-product (post-login) chat UX,
+  which was not accessed.
+tags: [ux, navigation, observed]
+synthetic: false
+notes: "plan=n/a; region=IN render; directness=direct; confidence=High; product_version=ambiguous; scope=public page only, not the chat app"

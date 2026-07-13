@@ -1,0 +1,18 @@
+id: cg-ux-settings-navigation
+type: primary
+evidence_tier: E2
+title: "Personalisation controls documented under Settings > Personalization (web)"
+origin: "https://help.openai.com/en/articles/8590148-memory-faq"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The Memory FAQ states "Memory controls are available in Settings > Personalization >
+  Memory" and the Custom Instructions article routes users to "Settings, select
+  Personalization". Supports that OpenAI documents a consistent settings location for
+  personalisation controls. It evidences documented navigation structure, not observed
+  discoverability for a first-time user.
+tags: [ux, navigation, discoverability]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

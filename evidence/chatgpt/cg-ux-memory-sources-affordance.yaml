@@ -1,0 +1,18 @@
+id: cg-ux-memory-sources-affordance
+type: primary
+evidence_tier: E2
+title: "A 'sources' affordance (book icon) is documented to reveal what personalised a response"
+origin: "https://help.openai.com/en/articles/8590148-memory-faq"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The Memory FAQ states "You can see what sources were used to personalize a response such
+  as custom instructions, past chats, files, and memories by tapping the book icon below the
+  response." Supports that OpenAI documents an in-context UX affordance exposing
+  personalisation provenance. The FAQ also cautions sources "may not show every factor",
+  which is recorded as a limit of the affordance. Not directly tested this phase.
+tags: [ux, transparency, output-presentation]
+synthetic: false
+notes: "plan=varies (memory rollout); region=global; directness=vendor-self-reported; confidence=Moderate; product_version=ambiguous"
