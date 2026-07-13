@@ -1,0 +1,17 @@
+id: cg-plus-identity-price
+type: primary
+evidence_tier: E2
+title: "ChatGPT Plus described as enhanced access to the ChatGPT web app for $20/month (US)"
+origin: "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The help article states: "ChatGPT Plus is a subscription plan that provides enhanced
+  access to the ChatGPT web app for $20/month" and lists "Price: $20/month (billed
+  monthly)." Supports the fact that OpenAI states a US Plus price of $20/month for the web
+  app. Is vendor-stated pricing for one region; see cg-pricing-region-inr for divergence.
+tags: [business-model, plans, pricing]
+synthetic: false
+notes: "plan=Plus; region=US; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

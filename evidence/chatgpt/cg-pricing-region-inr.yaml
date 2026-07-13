@@ -1,0 +1,17 @@
+id: cg-pricing-region-inr
+type: primary
+evidence_tier: E2
+title: "ChatGPT pricing page rendered region-localised prices in INR during the research window"
+origin: "https://chatgpt.com/pricing"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  When read via the in-app browser on 2026-07-13, the pricing page displayed "Free ₹0",
+  "Go ₹399", "Plus ₹1,999" and "Pro From ₹10,699" per month. Supports the fact that pricing
+  is region-localised and cannot be quoted as a single global figure. Does not establish the
+  price in any other region; the US help article states $20 for Plus (cg-plus-identity-price).
+tags: [business-model, pricing, region-ambiguity]
+synthetic: false
+notes: "plan=all; region=IN (observed render region); directness=vendor-self-reported; confidence=High; product_version=ambiguous; documents region-dependence"

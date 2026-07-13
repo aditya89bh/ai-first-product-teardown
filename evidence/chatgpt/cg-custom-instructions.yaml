@@ -1,0 +1,18 @@
+id: cg-custom-instructions
+type: primary
+evidence_tier: E2
+title: "Custom Instructions available on all plans; applied immediately to all chats"
+origin: "https://help.openai.com/en/articles/8096356-chatgpt-custom-instructions"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states "Custom instructions allow you to share anything you'd like ChatGPT to
+  consider in its response. Your custom instructions are applied immediately to all chats"
+  and "Custom instructions are available on all plans on Web, Desktop, iOS, and Android".
+  Supports the fact that OpenAI documents a cross-plan personalisation control. Behaviour of
+  the control was not directly tested this phase.
+tags: [ux, personalisation, capabilities]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

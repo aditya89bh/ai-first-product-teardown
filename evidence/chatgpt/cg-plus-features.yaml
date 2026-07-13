@@ -1,0 +1,19 @@
+id: cg-plus-features
+type: primary
+evidence_tier: E2
+title: "OpenAI lists Plus benefits: higher limits, reasoning, voice, image, file uploads, Deep Research, custom GPTs"
+origin: "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article lists Plus benefits including "Priority access during high-traffic periods",
+  "Higher model limits", "Advanced reasoning access", and expanded features "Voice
+  conversations", "Image generation", "File uploads and analysis", "Deep Research tools
+  (where available)", and "Custom GPT creation and use". Supports that OpenAI documents these
+  as Plus capabilities. It is vendor self-report, not observed behaviour, and several items
+  are qualified "where available".
+tags: [capabilities, plans, agent-behaviour]
+synthetic: false
+notes: "plan=Plus; region=US; directness=vendor-self-reported; confidence=High; product_version=ambiguous; note vendor qualifiers 'where available'"

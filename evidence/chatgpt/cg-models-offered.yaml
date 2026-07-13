@@ -1,0 +1,18 @@
+id: cg-models-offered
+type: primary
+evidence_tier: E2
+title: "Pricing page lists multiple selectable models across tiers (product offering, not capability)"
+origin: "https://chatgpt.com/pricing"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The plan-comparison table names models offered in the product (e.g. "GPT-5.5 Instant",
+  "GPT-5.6 Sol", "GPT-5.6 Sol Pro", "GPT-5.6 Terra", "GPT Instant total context window 27K").
+  Supports the fact that the product exposes a model picker with tier-gated options. This
+  record deliberately makes NO claim about any model's capability or quality; it documents
+  the product offering only.
+tags: [capabilities, agent-behaviour, model-vs-product]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=Moderate; product_version=ambiguous; model capability explicitly out of scope"

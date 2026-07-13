@@ -1,0 +1,18 @@
+id: cg-plans-overview
+type: primary
+evidence_tier: E2
+title: "ChatGPT offers tiered consumer plans (Free, Go, Plus, Pro) plus Business/Enterprise"
+origin: "https://chatgpt.com/pricing"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The official pricing page lists individual plans "Free" ("Best for trying out ChatGPT"),
+  "Go" ("Best for longer conversations"), "Plus" ("Best for advanced work and productivity")
+  and "Pro" ("Best for research and coding"), plus Business & Enterprise. Supports the fact
+  that ChatGPT is packaged as a tiered consumer web product. Does not establish feature
+  behaviour on any plan, only that these tiers are offered.
+tags: [business-model, identity, plans]
+synthetic: false
+notes: "plan=all; region=global/US-default; directness=vendor-self-reported; confidence=High; product_version=ambiguous; read via in-app browser (direct fetch 403)"

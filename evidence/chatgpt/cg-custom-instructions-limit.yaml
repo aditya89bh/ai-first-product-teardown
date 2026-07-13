@@ -1,0 +1,17 @@
+id: cg-custom-instructions-limit
+type: primary
+evidence_tier: E2
+title: "Custom Instructions long-form fields have a 1500-character limit; editable/deletable"
+origin: "https://help.openai.com/en/articles/8096356-chatgpt-custom-instructions"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states "The longer form text fields have a 1500 character limit" and "You can
+  edit or delete custom instructions at any time for future conversations." Supports a
+  specific, documented constraint and editability of the personalisation control. Not
+  behaviourally verified this phase.
+tags: [ux, personalisation, constraints]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"
