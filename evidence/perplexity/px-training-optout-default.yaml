@@ -1,0 +1,18 @@
+id: px-training-optout-default
+type: primary
+evidence_tier: E2
+title: "AI Data Retention is enabled by default for Free/Pro/Max; users can toggle off (opt-out)"
+origin: "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states: "For Free, Perplexity Pro and Perplexity Max users, AI Data Retention is
+  enabled by default. However, these users can control whether their data is used for AI model
+  training", via Account settings > Preferences > "AI data retention toggle". Supports that
+  Perplexity's consumer training default is OPT-OUT (on by default) - a key contrast with
+  Claude's opt-in and a parallel to ChatGPT's opt-out.
+tags: [trust, data-controls, training, opt-out]
+synthetic: false
+notes: "plan=Free,Pro,Max; region=global; directness=vendor-self-reported; confidence=High; product_version=help-2026-05-01"

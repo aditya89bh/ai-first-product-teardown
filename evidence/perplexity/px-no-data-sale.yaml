@@ -1,0 +1,17 @@
+id: px-no-data-sale
+type: primary
+evidence_tier: E2
+title: "Perplexity states it does not sell user data"
+origin: "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states: "Perplexity does not sell your data. Information is only shared with
+  trusted service providers (payment processors, customer support) or when required by law."
+  Supports a documented data-handling commitment. Vendor self-report; not independently
+  verifiable.
+tags: [trust, privacy, data-handling]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=help-2026-05-01"

@@ -1,0 +1,18 @@
+id: px-enterprise-no-training
+type: primary
+evidence_tier: E2
+title: "Enterprise data never used for training; files retained 7 days; ZDR agreements with model providers"
+origin: "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states Enterprise "data is never used for AI training purposes", "Uploaded files
+  are retained for only 7 days", and there are "Strict Zero Data Retention and Zero Data
+  Training agreements with AI providers (OpenAI, Anthropic, and more)". Supports strong,
+  plan-dependent enterprise protections and, notably, that third-party model providers are
+  contractually barred from training on Perplexity data.
+tags: [trust, enterprise, data-controls, third-party-models]
+synthetic: false
+notes: "plan=Enterprise; region=global; directness=vendor-self-reported; confidence=High; product_version=help-2026-05-01"

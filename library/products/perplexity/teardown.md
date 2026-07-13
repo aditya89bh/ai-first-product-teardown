@@ -114,7 +114,32 @@ This gap is recorded, not filled with assumptions.
 
 ## 8. Trust and control analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/trust/framework.md`. Source transparency and data controls are
+documented; in-answer citation accuracy is `[UNTESTED]`._
+
+- `[FACT]` **Source transparency** is central: every answer carries citations to sources for
+  verification (ev: px-citations), and Pro Search exposes its reasoning breakdown
+  (ev: px-pro-search-planning-visible).
+- `[FACT]` Consumer training default is **opt-out**: "AI Data Retention is enabled by default"
+  for Free/Pro/Max, with a toggle to opt out (ev: px-training-optout-default). Confidence:
+  High that this is documented.
+- `[FACT]` The opt-out has documented **limits**: it is not retroactive and "previously
+  collected training data cannot be deleted or removed" (ev: px-training-optout-limits).
+- `[FACT]` Perplexity states it **does not sell** user data (ev: px-no-data-sale), and
+  **Enterprise** data is never used for training with **ZDR agreements** binding third-party
+  model providers (ev: px-enterprise-no-training).
+- `[INFERENCE]` Perplexity's trust story leans on **process/source transparency** (citations,
+  visible planning) more than on privacy-by-default: consumer training is on by default and
+  the opt-out is non-retroactive (ev: px-citations, px-training-optout-default,
+  px-training-optout-limits). Confidence: Moderate — documentation-based.
+- `[HYPOTHESIS]` For a citation-first product, *source accuracy* may matter more to trust than
+  data controls; if citations frequently fail to support claims, the core value erodes —
+  untested and important (route: interaction protocol §6).
+
+**Evidence gaps (trust/control):** whether citations accurately support the claims they
+attach to, in-answer uncertainty signalling, and whether the opt-out toggle behaves as
+documented are `[UNTESTED]` (protocol §6, §8). No sub-area scored negatively for missing
+evidence.
 
 ## 9. Business-model analysis
 
