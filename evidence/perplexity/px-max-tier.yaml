@@ -1,0 +1,18 @@
+id: px-max-tier
+type: primary
+evidence_tier: E2
+title: "Max is the top consumer tier for high-volume power users; API billed separately"
+origin: "https://www.perplexity.ai/help-center/en/articles/11680686-perplexity-max"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The Max article states Max "is Perplexity's most advanced subscription tier built for users
+  who need the highest level of access... Available now on all platforms" and that model
+  access "only applies within Perplexity web and does not apply to programatic access via API,
+  which is billed separately." Supports the packaging split between subscription (web product)
+  and usage-based API, and Max's high-volume positioning.
+tags: [business-model, packaging, plans, api]
+synthetic: false
+notes: "plan=Max; region=global; directness=vendor-self-reported; confidence=High; product_version=help-2026-05-01"

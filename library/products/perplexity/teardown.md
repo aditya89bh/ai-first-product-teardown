@@ -143,7 +143,32 @@ evidence.
 
 ## 9. Business-model analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/business-model/framework.md`. Value creation/capture only; no company
+valuation or revenue forecast._
+
+- `[FACT]` Perplexity is packaged **Free → Pro → Max**, with **Education Pro at $10/mo**, plus
+  **Enterprise Pro/Max** and a **Sonar API** (ev: px-plans-overview, px-education-pro-price).
+  Free gives broad basic search but gates advanced models and Pro Search
+  (ev: px-free-plan-limits).
+- `[FACT]` **Max** targets high-volume power users; model access applies to the web product,
+  while **API is billed separately** (ev: px-max-tier).
+- `[FACT]` The product **resells access to third-party models** (OpenAI, Anthropic, Google)
+  as an orchestration layer (ev: px-model-choice).
+- `[INFERENCE]` Because it pays third parties for model access, Perplexity's **cost structure
+  is partly pass-through**, which plausibly explains gating advanced models behind paid tiers
+  and metering Pro Search on Free (ev: px-model-choice, px-free-plan-limits). Confidence:
+  Moderate — a cautious inference from the offering, not from financials.
+- `[INFERENCE]` Value capture combines **subscription tiers + a student discount + separate
+  usage-based API** (ev: px-plans-overview, px-max-tier, px-education-pro-price). Confidence:
+  Moderate.
+- `[HYPOTHESIS]` Depending on a third-party-model layer creates a strategic dependency risk
+  (pricing/availability of upstream models) — plausible but not evidenced by financials.
+  Confidence: Speculative.
+
+**Evidence gaps (business model):** exact standard **Pro and Max consumer prices** were not
+stated on the read pages (only Education Pro $10/mo) — recorded as a gap, not guessed. Revenue,
+margins, and upstream model-cost terms are not evidenced. No advertising was observed on the
+pages read (absence is not evidence of absence).
 
 ## 10. Workflow-change analysis
 
