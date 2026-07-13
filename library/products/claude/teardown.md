@@ -171,7 +171,27 @@ Region-localised pricing beyond USD was not checked. Prices are time-sensitive.
 
 ## 10. Workflow-change analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/workflow-change/framework.md`. Net workflow effect is `[UNTESTED]`; no
+superficial evidence was manufactured — existing records are cited._
+
+- `[FACT]` The product offers features aimed at **restructuring how work is organised and
+  produced** — Projects (persistent, topic-scoped context) (ev: cl-projects,
+  cl-memory-projects-separate), Artifacts (shareable outputs) (ev: cl-artifacts), and tool
+  integrations (ev: cl-agent-integrations). Confidence: High that these are offered.
+- `[INFERENCE]` If they work as documented, Claude shifts knowledge work toward
+  **container-based, resumable projects** and **externalised artifacts**, moving the human
+  from author toward director/reviewer (ev: cl-projects, cl-artifacts). Confidence: Low —
+  inferred from feature descriptions, not observed task completion.
+- `[INFERENCE]` Per-project memory (ev: cl-memory-projects-separate) implies **less
+  cross-context repetition** within a project but a **new setup step** (creating/curating
+  projects). Confidence: Low.
+- `[HYPOTHESIS]` Artifacts may reduce copy-paste-and-format steps for buildable outputs while
+  adding a review/iterate loop on the artifact — net effect task-dependent; untested (route:
+  interaction protocol §3).
+
+**Evidence gaps (workflow change):** tasks compressed, steps removed vs added, human decision
+points, coordination changes and new failure modes require running representative tasks end to
+end (protocol §3–§10). The dimension is `Not rated` pending interaction.
 
 ## 11. Cross-dimensional findings
 
