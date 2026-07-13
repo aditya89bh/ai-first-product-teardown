@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security or exposed sensitive data
+    url: https://github.com/aditya89bh/ai-first-product-teardown/security/advisories/new
+    about: Report privately via a security advisory. Do not open a public issue with details.

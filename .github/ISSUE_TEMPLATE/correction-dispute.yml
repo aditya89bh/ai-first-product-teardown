@@ -1,0 +1,45 @@
+name: Correction / dispute
+description: Challenge a specific claim with evidence or reasoning.
+title: "[Dispute] <short description>"
+labels: ["dispute", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        See `docs/governance/corrections-and-disputes.md`. A dispute without evidence or
+        reasoning is treated as a question, not a dispute.
+  - type: input
+    id: location
+    attributes:
+      label: Claim location
+      description: File path and, if relevant, the evidence record id.
+      placeholder: e.g. library/products/acme-assistant/teardown.md, section 4.4
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: The claim you are disputing
+      description: Quote or precisely describe the claim.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong, and your evidence
+      description: >
+        Explain the problem and provide evidence or reasoning held to the library's standards
+        (see docs/methodology/source-types.md and evidence-hierarchy.md).
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Requested outcome
+      options:
+        - Correct the claim
+        - Downgrade its confidence or classification
+        - Add a caveat
+        - Withdraw the claim
+    validations:
+      required: true

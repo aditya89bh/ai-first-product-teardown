@@ -1,0 +1,49 @@
+name: Product proposal
+description: Propose an AI-first product for a teardown.
+title: "[Proposal] <product name>"
+labels: ["proposal", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before proposing, check the inclusion and selection criteria:
+        `docs/methodology/inclusion-criteria.md` and `selection-criteria.md`.
+  - type: input
+    id: product
+    attributes:
+      label: Product name
+      placeholder: e.g. Acme Assistant
+    validations:
+      required: true
+  - type: textarea
+    id: ai_first
+    attributes:
+      label: Why is it AI-first?
+      description: Explain why its core value depends on model-driven behaviour.
+    validations:
+      required: true
+  - type: textarea
+    id: studiable
+    attributes:
+      label: How can it be studied?
+      description: Access (free tier, trial, demo) and what evidence is realistically available.
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Learning value
+      description: What would studying this teach about how AI-first products work?
+    validations:
+      required: true
+  - type: checkboxes
+    id: eligibility
+    attributes:
+      label: Eligibility check
+      options:
+        - label: It is a shipped, reachable product (not vaporware).
+          required: true
+        - label: It can be studied without breaching terms, privacy or security.
+          required: true
+        - label: I am not aware of an unmanageable conflict of interest.
+          required: true

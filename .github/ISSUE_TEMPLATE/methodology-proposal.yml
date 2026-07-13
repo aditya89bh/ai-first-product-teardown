@@ -1,0 +1,31 @@
+name: Methodology proposal
+description: Propose a change to the method, frameworks, governance or schemas.
+title: "[Methodology] <short description>"
+labels: ["methodology", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Method changes are deliberate and slow (see `docs/roadmap/roadmap.md`). Explain the
+        problem and the change together so the trade-off is legible.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What limitation or failure mode in the current method motivates this?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: The concrete change to docs, frameworks, governance or schemas.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact on existing teardowns
+      description: Would this require re-review or re-versioning of existing work?
+    validations:
+      required: false
