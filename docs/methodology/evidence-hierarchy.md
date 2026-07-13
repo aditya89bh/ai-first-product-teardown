@@ -64,3 +64,21 @@ inference.
 It is not a substitute for judgement. A high tier does not make a claim true, and a low tier
 does not make it false — it calibrates how confidently the claim may be stated and how much
 corroboration it needs.
+
+## Phase 2 addendum (2026-07-13): evidence directness and scope
+
+*Added after the pilot stress-test (see `docs/research/phase-2-methodology-stress-test.md`,
+finding F2). This clarifies, and does not replace, the tiers above.*
+
+- **A primary source (E2) that is the vendor's own documentation is *vendor self-report*, not
+  observed behaviour.** A documented feature supports the fact *that the vendor states it*, and
+  is at most an **inference** about actual behaviour until directly observed. Record this with
+  the evidence record's `evidence_directness` field (`direct` / `vendor-self-reported` /
+  `indirect`).
+- **Confidence attaches to the specific claim.** "High confidence that a feature is documented"
+  is **not** "High confidence that the behaviour occurs". State which you mean.
+- **Scope every claim to a plan and region.** A finding on one plan/region is not evidence about
+  another (e.g. ChatGPT Plus at $20 US vs ₹1,999 in an INR render are recorded separately, never
+  merged).
+- **Thin documentation yields `Not rated`, never a low score** — missing evidence is never
+  converted into a negative finding.
