@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/aditya89bh/ai-first-product-teardown/schemas/scoring-record.schema.json",
+  "title": "Scoring Record",
+  "description": "Qualitative, bounded scores for one teardown. Enforces the no-false-precision rules: ordinal scores only, no numeric or composite scores. See frameworks/qualitative-scoring.md and scoring-false-precision.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["product_slug", "teardown_version", "scored_on", "scores"],
+  "properties": {
+    "product_slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "teardown_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "scored_on": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO date the scoring was performed."
+    },
+    "scores": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/score" },
+      "description": "One entry per scored sub-area. There is deliberately no aggregate or overall score field."
+    }
+  },
+  "$defs": {
+    "score": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dimension", "sub_area", "level", "confidence", "rationale", "evidence_refs"],
+      "properties": {
+        "dimension": {
+          "type": "string",
+          "enum": [
+            "ux",
+            "agent-behaviour",
+            "memory",
+            "trust",
+            "business-model",
+            "workflow-change"
+          ]
+        },
+        "sub_area": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The specific sub-area scored within the dimension."
+        },
+        "level": {
+          "type": "string",
+          "enum": ["Strong", "Adequate", "Weak", "Absent", "Not rated"],
+          "description": "Ordinal score. Numeric scores are prohibited by policy."
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["High", "Moderate", "Low", "Speculative"],
+          "description": "Confidence level for this score."
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1,
+          "description": "One-line justification so the score can be challenged."
+        },
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "description": "Evidence record ids supporting this score. A score without evidence is invalid."
+        }
+      },
+      "allOf": [
+        {
+          "description": "A 'Not rated' level must not carry High/Moderate/Low confidence; use Speculative.",
+          "if": {
+            "properties": { "level": { "const": "Not rated" } }
+          },
+          "then": {
+            "properties": { "confidence": { "const": "Speculative" } }
+          }
+        },
+        {
+          "description": "A 'High' confidence score cannot rest on a single evidence record (triangulation required).",
+          "if": {
+            "properties": { "confidence": { "const": "High" } }
+          },
+          "then": {
+            "properties": {
+              "evidence_refs": { "minItems": 2 }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
