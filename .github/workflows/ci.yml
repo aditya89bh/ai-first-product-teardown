@@ -47,6 +47,9 @@ jobs:
       - name: Validate structured records (pi-validate)
         run: pi-validate
 
+      - name: Evidence-quality audit (pi-evidence-audit)
+        run: pi-evidence-audit
+
       - name: Validate JSON Schema files parse and are well-formed
         run: python -m json.tool schemas/product-metadata.schema.json > /dev/null &&
              python -m json.tool schemas/evidence-record.schema.json > /dev/null &&
