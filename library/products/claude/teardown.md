@@ -69,7 +69,24 @@ an authenticated session (protocol §1, §2). Such sub-areas are `Not rated`.
 
 ## 6. Agent-behaviour analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/agent-behaviour/framework.md`. Behavioural sub-areas are `[UNTESTED]`._
+
+- `[FACT]` The product offers agentic/tool-using surfaces — web search (ev: cl-web-search),
+  Artifacts generation (ev: cl-artifacts), and external integrations with Google Workspace,
+  JIRA, Zapier and Intercom (ev: cl-agent-integrations). Confidence: High that these are
+  offered.
+- `[INFERENCE]` The integration set and Artifacts suggest Claude is positioned for
+  **tool-connected, output-producing work** (documents, tickets, automations), not only
+  Q&A (ev: cl-agent-integrations, cl-artifacts). Confidence: Moderate — from feature listing,
+  not observed execution.
+- `[HYPOTHESIS]` Artifacts as a distinct, shareable output surface may change how much the
+  agent *shows its work* versus embedding it in chat — untested (route: interaction protocol
+  §3).
+
+**Evidence gaps (agent behaviour):** task interpretation, planning visibility, clarification,
+autonomy vs confirmation, failure recovery, intervention and boundary communication are all
+`[UNTESTED]` (protocol §3–§5, §9, §10). Documentation shows *that* tools exist, not *how* the
+agent behaves. These sub-areas are `Not rated`.
 
 ## 7. Memory analysis
 
