@@ -1,0 +1,17 @@
+id: px-plans-overview
+type: primary
+evidence_tier: E2
+title: "Perplexity plans: Standard (Free), Pro, Max, Education Pro, Enterprise Pro/Max, plus Sonar API"
+origin: "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article lists Individual plans "Standard (Free)", "Perplexity Pro", "Perplexity Max",
+  "Education Pro (/mo with verification from SheerID)", Enterprise "Enterprise Pro" and
+  "Enterprise Max", and "Sonar API". Supports the documented plan structure. Establishes tiers
+  only, not per-plan behaviour.
+tags: [business-model, plans, identity]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=help-2026-05-01"

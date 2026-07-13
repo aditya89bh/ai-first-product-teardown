@@ -1,0 +1,18 @@
+id: px-identity-answer-engine
+type: primary
+evidence_tier: E2
+title: "Perplexity positions as an AI-powered search/answer engine returning cited answers"
+origin: "https://www.perplexity.ai/help-center/en/articles/10352155-what-is-perplexity"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The help article states: "Perplexity is an AI-powered search engine that transforms how you
+  discover and interact with information. Simply ask any question, and it searches the web to
+  deliver accessible, conversational answers backed by verifiable sources. Each response
+  includes citations and links to original sources." Supports the product's core identity as
+  a citation-first answer engine - a different product thesis from a general assistant.
+tags: [identity, answer-engine, citations]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=help-2026-05-01"

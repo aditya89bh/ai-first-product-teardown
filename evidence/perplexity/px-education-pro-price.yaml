@@ -1,0 +1,17 @@
+id: px-education-pro-price
+type: primary
+evidence_tier: E2
+title: "Education Pro offered at $10/month with SheerID verification"
+origin: "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states "Education Pro (/mo with verification from SheerID)" and that it
+  "includes everything in Pro... plus education-specific tips and nudges." Supports one
+  verbatim consumer price point and a student-segment strategy. Exact standard Pro and Max
+  consumer prices were NOT stated on the read pages (see evidence gap).
+tags: [business-model, pricing, segmentation]
+synthetic: false
+notes: "plan=Education Pro; region=global; directness=vendor-self-reported; confidence=High; product_version=help-2026-05-01"

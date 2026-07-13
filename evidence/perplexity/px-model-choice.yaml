@@ -1,0 +1,18 @@
+id: px-model-choice
+type: primary
+evidence_tier: E2
+title: "Perplexity integrates third-party models (OpenAI GPT, Anthropic Claude) with user choice"
+origin: "https://www.perplexity.ai/help-center/en/articles/10352155-what-is-perplexity"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states: "The platform integrates cutting-edge AI models, including OpenAI's GPT
+  models and Anthropic's Claude, giving you the flexibility to choose the model that best fits
+  your specific needs." Supports that Perplexity is a model-agnostic layer over third-party
+  models - important context: its 'product' value is orchestration and citation, distinct from
+  any single model's capability.
+tags: [identity, model-vs-product, agent-behaviour]
+synthetic: false
+notes: "plan=varies; region=global; directness=vendor-self-reported; confidence=High; product_version=help-2026-05-01"

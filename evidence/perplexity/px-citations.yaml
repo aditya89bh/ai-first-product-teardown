@@ -1,0 +1,18 @@
+id: px-citations
+type: primary
+evidence_tier: E2
+title: "Responses are supported by citations from reputable sources for verification"
+origin: "https://www.perplexity.ai/help-center/en/articles/10352155-what-is-perplexity"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states responses are "supported by citations from reputable news organizations,
+  academic publications, and established content sources", enabling users to "verify the
+  information or explore topics in greater depth." Supports that source-attribution is a
+  documented, central design feature. Whether citations accurately support claims in practice
+  was not observed (a trust question routed to interaction testing).
+tags: [trust, citations, source-transparency]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=help-2026-05-01"
