@@ -1,0 +1,17 @@
+id: px-brain-preview
+type: primary
+evidence_tier: E2
+title: "Brain is explicitly a Research Preview giving Perplexity Computer working context"
+origin: "https://www.perplexity.ai/help-center/en/articles/11680686-perplexity-max"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The Max article describes "Brain in Research Preview - a self-improving memory system that
+  gives Perplexity Computer working context." Corroborates px-brain-memory that Brain is
+  preview-stage and Computer-scoped. Preserves the 'preview' qualifier; behaviour and controls
+  (edit/delete) were not documented on the pages read and are an evidence gap.
+tags: [memory, brain, caveat]
+synthetic: false
+notes: "plan=Max; region=global; directness=vendor-self-reported; confidence=High; product_version=research-preview; expiry_sensitive=true"

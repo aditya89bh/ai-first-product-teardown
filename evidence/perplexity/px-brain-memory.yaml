@@ -1,0 +1,18 @@
+id: px-brain-memory
+type: primary
+evidence_tier: E2
+title: "Brain is a Max-tier self-improving memory building a working model of projects/people/files"
+origin: "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The subscription article states: "Brain (Research Preview): Max subscribers using Perplexity
+  Computer get access to Brain, a self-improving memory system that builds a working model of
+  your projects, people, and files so Computer can act on what you've been doing. Free during
+  the current preview period." Supports that Perplexity's richer memory (Brain) is gated to
+  Max + Perplexity Computer and is in preview - NOT a base-product feature.
+tags: [memory, plan-ambiguity, brain]
+synthetic: false
+notes: "plan=Max (+Computer); region=global; directness=vendor-self-reported; confidence=High; product_version=research-preview; expiry_sensitive=true"

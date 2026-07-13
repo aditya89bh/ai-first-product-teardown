@@ -90,7 +90,27 @@ failure recovery, intervention, and whether the visible plan reflects the actual
 
 ## 7. Memory analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/memory/framework.md`. Documentation on base-product memory is thin;
+the richer memory is gated and in preview._
+
+- `[FACT]` The Free plan documents "Search history access" (ev: px-free-plan-limits) but the
+  read documentation describes no automatic cross-session personalisation memory for the base
+  product comparable to ChatGPT's or Claude's.
+- `[FACT]` The richer memory — **Brain** — is a "self-improving memory system that builds a
+  working model of your projects, people, and files", **gated to Max + Perplexity Computer**
+  and in **Research Preview** (ev: px-brain-memory, px-brain-preview). Confidence: High that
+  this is documented.
+- `[INFERENCE]` Consistent with its answer-engine thesis, Perplexity appears to treat
+  persistent user memory as a **premium, workspace-tier capability (Brain)** rather than a
+  default of the core product (ev: px-brain-memory, px-free-plan-limits). Confidence: Moderate
+  — documentation-based, and Brain is early (preview).
+- `[HYPOTHESIS]` An answer engine may need less persistent memory than a general assistant
+  because each query is more self-contained — plausible but untested. Confidence: Speculative.
+
+**Evidence gaps (memory):** Brain's user controls (view/edit/delete), retention, and whether
+it trains models were **not** documented on the pages read — a notable asymmetry versus
+ChatGPT's and Claude's detailed memory docs. Base-product memory behaviour is `[UNTESTED]`.
+This gap is recorded, not filled with assumptions.
 
 ## 8. Trust and control analysis
 
