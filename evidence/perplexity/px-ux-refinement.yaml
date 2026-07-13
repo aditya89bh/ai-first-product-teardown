@@ -1,0 +1,17 @@
+id: px-ux-refinement
+type: primary
+evidence_tier: E2
+title: "Pro Search supports follow-up refinement while maintaining prior context"
+origin: "https://www.perplexity.ai/help-center/en/articles/10352903-what-is-pro-search"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The Pro Search article states: "You can continue the conversation with follow-up questions;
+  Pro Search maintains context from previous interactions, enabling a natural, flowing
+  dialogue." Supports a documented conversational-refinement UX on top of search. Behaviour
+  (whether context is actually retained well) not observed.
+tags: [ux, refinement, conversation]
+synthetic: false
+notes: "plan=Pro; region=global; directness=vendor-self-reported; confidence=High; product_version=help-2026-05-01"

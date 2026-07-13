@@ -1,0 +1,18 @@
+id: px-ux-direct-answers
+type: primary
+evidence_tier: E2
+title: "UX centres on direct synthesised answers rather than lists of links"
+origin: "https://www.perplexity.ai/help-center/en/articles/10352155-what-is-perplexity"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article contrasts Perplexity with traditional search: "Traditional search engines
+  present you with lots of links to sift through. Perplexity functions as an intelligent
+  research assistant... delivering the precise knowledge you need without the extra steps and
+  clicks", giving "Direct answers" that "synthesize information from multiple sources".
+  Supports a documented UX thesis: answer-first, links-as-citations. Not observed in-product.
+tags: [ux, output-presentation, answer-engine]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=help-2026-05-01"

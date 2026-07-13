@@ -43,7 +43,23 @@ See `source-inventory.md` (source-to-evidence map) and §13. Evidence records li
 
 ## 5. User experience analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/ux/framework.md`. Documentation-first; in-product UX `[UNTESTED]`._
+
+- `[FACT]` The documented UX thesis is **answer-first**: synthesised direct answers instead of
+  lists of links, with sources as citations (ev: px-ux-direct-answers, px-citations).
+  Confidence: High that this is the stated design.
+- `[FACT]` Pro Search supports **conversational refinement** with retained context
+  (ev: px-ux-refinement).
+- `[INFERENCE]` Perplexity's UX optimises for **fast verifiable answers** rather than
+  open-ended assistance — a narrower, more focused interaction model than a general assistant
+  (ev: px-ux-direct-answers, px-identity-answer-engine). Confidence: Moderate —
+  documentation-based.
+- `[HYPOTHESIS]` Presenting citations inline may make source-checking a normal part of the UX
+  loop (rather than an afterthought) — untested (route: interaction protocol §2, §6).
+
+**Evidence gaps (UX):** first-use orientation, input structure, actual output/citation
+rendering, error states, and accessibility indicators are `[UNTESTED]` (protocol §1, §2). Such
+sub-areas are `Not rated`.
 
 ## 6. Agent-behaviour analysis
 
