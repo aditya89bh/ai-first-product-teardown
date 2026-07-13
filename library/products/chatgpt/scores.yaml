@@ -1,0 +1,67 @@
+product_slug: chatgpt
+teardown_version: 0.1.0
+scored_on: "2026-07-13"
+# Ordinal scores only (Strong/Adequate/Weak/Absent/Not rated). No numeric or composite score.
+# Interaction-dependent sub-areas are 'Not rated'/Speculative, NOT scored negatively.
+# 'documented-only' scores judge what the vendor documents, not observed behaviour.
+scores:
+  - dimension: memory
+    sub_area: "transparency of what is remembered (documented)"
+    level: Adequate
+    confidence: Moderate
+    rationale: "Memory summary + sources affordance documented, but vendor says they may not show everything; efficacy untested."
+    evidence_refs: [cg-memory-summary-edit, cg-ux-memory-sources-affordance]
+  - dimension: memory
+    sub_area: "deletion completeness (documented)"
+    level: Weak
+    confidence: Moderate
+    rationale: "Documented that suppression is not deletion and full removal spans many surfaces; this is an evidenced friction, not a gap."
+    evidence_refs: [cg-memory-delete, cg-memory-summary-edit]
+  - dimension: memory
+    sub_area: "user consent and opt-out (documented)"
+    level: Adequate
+    confidence: Moderate
+    rationale: "Memory is toggleable and Temporary Chats bypass memory; plan/region rollout limits generalisability."
+    evidence_refs: [cg-memory-how-it-works, cg-temporary-chats-memory]
+  - dimension: trust
+    sub_area: "data controls breadth (documented)"
+    level: Strong
+    confidence: Moderate
+    rationale: "Unrestricted training opt-out, ephemeral chats with stated retention, and ad controls are all documented; not independently verified."
+    evidence_refs: [cg-data-training-optout, cg-temporary-chats-retention]
+  - dimension: trust
+    sub_area: "candour about control limits (documented)"
+    level: Strong
+    confidence: Moderate
+    rationale: "Vendor explicitly documents a safety-context exception to personalisation controls rather than overstating control."
+    evidence_refs: [cg-safety-context, cg-data-training-optout]
+  - dimension: business-model
+    sub_area: "packaging legibility"
+    level: Adequate
+    confidence: Moderate
+    rationale: "Tiers are clearly presented, but limits are unquantified ('Limited') and pricing is region-localised."
+    evidence_refs: [cg-plans-overview, cg-free-tier-limits]
+  - dimension: business-model
+    sub_area: "incentive alignment (ads on paid tier)"
+    level: Not rated
+    confidence: Speculative
+    rationale: "Ads appear on a paid tier, but whether this misaligns with user interest is a hypothesis, not evidenced."
+    evidence_refs: [cg-ads-go-plan]
+  - dimension: ux
+    sub_area: "in-product chat UX"
+    level: Not rated
+    confidence: Speculative
+    rationale: "No authenticated chat session used; only the public marketing surface was observed."
+    evidence_refs: [cg-ux-web-nav-observed]
+  - dimension: agent-behaviour
+    sub_area: "planning, clarification, failure recovery"
+    level: Not rated
+    confidence: Speculative
+    rationale: "Features are offered but behaviour was not observed; documentation cannot evidence agent behaviour."
+    evidence_refs: [cg-agent-tooling-offered]
+  - dimension: workflow-change
+    sub_area: "net workflow effect"
+    level: Not rated
+    confidence: Speculative
+    rationale: "Requires running representative tasks end to end; untested this phase."
+    evidence_refs: [cg-agent-deep-research]

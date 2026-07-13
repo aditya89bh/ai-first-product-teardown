@@ -221,28 +221,66 @@ interaction.
 
 ## 11. Cross-dimensional findings
 
-_Populated in the synthesis commit._
+- **Memory ↔ trust ↔ workflow.** ChatGPT's memory is documented transparently (summary,
+  sources) yet imposes a multi-surface deletion burden and an unremovable safety-context
+  exception (ev: cg-memory-delete, cg-safety-context). The seam finding: *documented
+  transparency does not equal effective control*, and the gap becomes a workflow cost (users
+  must verify why answers appear). Confidence: Moderate.
+- **Business model ↔ trust.** Ads now appear on a paid tier (ev: cg-ads-go-plan) while data
+  controls are richer on business tiers (ev: cg-business-data-controls). The seam finding:
+  consumer-tier users get advertising *and* fewer controls than business tiers — an incentive
+  worth watching, stated as an inference, not a verdict. Confidence: Low.
+- **Model vs product discipline.** The pricing table foregrounds many models
+  (ev: cg-models-offered); this teardown deliberately makes no capability claims about them —
+  a reminder that product analysis ≠ model benchmarking.
 
 ## 12. Scoring record
 
-See `scores.yaml` (validated against `schemas/scoring-record.schema.json`), added in the
-synthesis commit.
+See `scores.yaml` (validated against `schemas/scoring-record.schema.json`). Scores are ordinal
+and per-sub-area; there is **no overall product score**. Interaction-dependent sub-areas are
+`Not rated` / `Speculative`, never scored negatively for missing evidence.
 
 ## 13. Evidence gaps
 
-_Populated across dimension commits and consolidated in the synthesis commit._
+| Question | Why unanswerable now | How to close |
+| -------- | -------------------- | ------------ |
+| Does memory edit/delete actually behave as documented? | No authenticated session | Interaction protocol §7 |
+| First-use orientation, input/output UX, error states | No chat session used | Protocol §1, §2 |
+| Agent planning, clarification, failure recovery, cancellation | Behavioural; untested | Protocol §3–§5, §9, §10 |
+| In-answer uncertainty signalling and citation accuracy | Behavioural; untested | Protocol §6, §8 |
+| Exact free-tier limits ("Limited") | Not quantified by source | Interaction / support docs |
+| US vs non-US pricing beyond $20 / ₹1,999 | Region-localised page | Access from multiple regions |
 
 ## 14. Limitations
 
-_Populated in the synthesis commit._
+- **Documentation-first.** Most claims are `vendor-self-reported`; efficacy is unobserved.
+- **No authenticated/paid interaction.** Free-tier and paid behaviour were not exercised.
+- **Region ambiguity.** The pricing page rendered in INR; US figures come from a help
+  article. Findings are global/US-default where sources are silent.
+- **Rollout volatility.** Memory is mid-rollout by plan and region; documented behaviour may
+  not apply to any given account.
+- **No version string.** Findings are dated to 2026-07-13 and are expiry-sensitive.
+- **Research-environment note.** See the Claude teardown's conflict/bias note for a
+  disclosure that applies to the whole pilot; for ChatGPT specifically, no conflict is
+  declared and no relationship with OpenAI exists.
 
 ## 15. Reproduction instructions
 
-_Populated in the synthesis commit._
+1. Read the five sources in `source-inventory.md` (help.openai.com articles via a browser, as
+   direct fetch returns 403; `chatgpt.com/pricing` via a browser). Note prices are
+   region-localised — record your region.
+2. Compare each cited quotation in `evidence/chatgpt/*.yaml` against the live page on your
+   access date; record any drift (products change silently).
+3. To close the gaps in §13, run the relevant categories of
+   `docs/research/interaction-test-protocol.md` on an authenticated account, recording plan,
+   region, date and exact prompts; add `observation`-type evidence records with `unit_ref`s.
+4. Re-run `pi-validate` after adding records.
 
 ## 16. Update triggers
 
-_Populated in the synthesis commit._
+Re-review when any of the following occurs: memory system leaves rollout or changes; pricing
+or tier structure changes; ad presence/format changes; the training opt-out or Temporary Chat
+retention policy changes; or the review-by date (2026-10-13) is reached.
 
 ## 17. Facts, observations, inferences and hypotheses
 
