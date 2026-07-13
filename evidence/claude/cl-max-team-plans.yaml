@@ -1,0 +1,17 @@
+id: cl-max-team-plans
+type: primary
+evidence_tier: E2
+title: "Claude Max from $100/month; Team standard $20/seat annual ($25 monthly)"
+origin: "https://claude.com/pricing"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The pricing page lists Max at "From " per month (with 5x or 20x usage options) and Team
+  standard seats at " Per seat / month if billed annually.  if billed monthly", with
+  premium seats at "". Supports the documented expansion path from Pro to Max and the
+  Team seat pricing. Region read as USD.
+tags: [business-model, pricing, expansion-path]
+synthetic: false
+notes: "plan=Max,Team; region=US-default; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

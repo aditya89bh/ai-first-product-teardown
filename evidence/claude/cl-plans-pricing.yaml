@@ -1,0 +1,16 @@
+id: cl-plans-pricing
+type: primary
+evidence_tier: E2
+title: "Claude offers Free, Pro, Max, Team and Enterprise plans"
+origin: "https://claude.com/pricing"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The pricing page lists individual plans "Free" (/bin/zsh, "Free for everyone") and "Pro", plus
+  "Max", "Team" and "Enterprise". Supports the fact that Claude is packaged as a tiered
+  consumer-to-enterprise product. Establishes the tiers only, not per-plan behaviour.
+tags: [business-model, plans, identity]
+synthetic: false
+notes: "plan=all; region=US-default; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

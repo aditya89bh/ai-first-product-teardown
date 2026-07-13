@@ -1,0 +1,17 @@
+id: cl-pro-price
+type: primary
+evidence_tier: E2
+title: "Claude Pro priced at $17/month with annual billing ($20 monthly)"
+origin: "https://claude.com/pricing"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The pricing page lists Pro at "" "Per month with annual subscription discount (
+  billed up front).  if billed monthly." Supports the documented Pro price and its annual/
+  monthly split. Notes: "Prices shown don't include applicable tax. Price and plans are
+  subject to change." Region read as USD.
+tags: [business-model, pricing, plans]
+synthetic: false
+notes: "plan=Pro; region=US-default; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

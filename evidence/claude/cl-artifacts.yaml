@@ -1,0 +1,16 @@
+id: cl-artifacts
+type: primary
+evidence_tier: E2
+title: "Artifacts documented as a feature to build shareable tools/visualisations from a description"
+origin: "https://claude.com/product/overview"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The overview describes Artifacts: "Turn ideas into shareable creations. Build tools,
+  visualizations, and experiences by simply describing what you need." Supports that the
+  product offers a generative-artifact surface. Actual behaviour/quality not observed.
+tags: [capabilities, agent-behaviour, workflow-change]
+synthetic: false
+notes: "plan=unspecified; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

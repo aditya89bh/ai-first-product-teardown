@@ -1,0 +1,19 @@
+id: cl-identity-capabilities
+type: primary
+evidence_tier: E2
+title: "Claude positioned as a conversational 'thinking partner' with chat, Artifacts, Projects, web search, file analysis"
+origin: "https://claude.com/product/overview"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The product overview presents Claude as "The AI for Problem Solvers" and a thinking partner,
+  listing capabilities: a chat interface, Artifacts ("Turn ideas into shareable creations"),
+  Projects ("Organize conversations by topic with persistent context"), Web Search ("Access
+  current information beyond Claude's knowledge"), file analysis, Voice Mode, and integrations
+  (Google Workspace, JIRA, Zapier, Intercom). Supports the product's identity and documented
+  capability set; behaviour not observed.
+tags: [identity, capabilities, ux]
+synthetic: false
+notes: "plan=unspecified; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

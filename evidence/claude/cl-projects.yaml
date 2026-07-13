@@ -1,0 +1,17 @@
+id: cl-projects
+type: primary
+evidence_tier: E2
+title: "Projects documented as topic-scoped workspaces with persistent context"
+origin: "https://claude.com/product/overview"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The overview describes Projects: "Organize conversations by topic with persistent context.
+  Keep related work together and build on previous insights." Supports a documented
+  workspace/organisation feature relevant to memory scoping and workflow. Behaviour not
+  observed.
+tags: [capabilities, memory, workflow-change]
+synthetic: false
+notes: "plan=unspecified; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

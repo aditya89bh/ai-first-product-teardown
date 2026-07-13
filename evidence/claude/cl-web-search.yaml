@@ -1,0 +1,17 @@
+id: cl-web-search
+type: primary
+evidence_tier: E2
+title: "Web search documented to access current information beyond Claude's knowledge"
+origin: "https://claude.com/product/overview"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The overview describes Web Search: "Access current information beyond Claude's knowledge.
+  Find recent data, news, and research to supplement your work." Supports that the product
+  offers a web-retrieval capability. Whether/how it cites sources in answers was not observed
+  this phase (relevant to trust/source-transparency).
+tags: [capabilities, agent-behaviour, trust]
+synthetic: false
+notes: "plan=unspecified; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"
