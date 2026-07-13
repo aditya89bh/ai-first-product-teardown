@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/aditya89bh/ai-first-product-teardown/schemas/product-metadata.schema.json",
+  "title": "Product Teardown Metadata",
+  "description": "Machine-readable metadata for a single product teardown. See docs/methodology/unit-of-analysis.md and docs/governance/versioning.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "product_name",
+    "product_slug",
+    "teardown_version",
+    "status",
+    "unit_of_analysis",
+    "observation_window",
+    "last_updated",
+    "review_by",
+    "authors",
+    "conflicts_of_interest"
+  ],
+  "properties": {
+    "product_name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable product name."
+    },
+    "product_slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Kebab-case identifier used in paths and cross-references."
+    },
+    "teardown_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Semantic-style version MAJOR.MINOR.PATCH (see versioning policy)."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "stale", "deprecated", "withdrawn"],
+      "description": "Lifecycle status (see archival-and-deprecation policy)."
+    },
+    "unit_of_analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["edition", "surface", "version_identifier", "account_context"],
+      "properties": {
+        "edition": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Tier/edition studied, e.g. 'free web tier'."
+        },
+        "surface": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Client or entry point, e.g. 'web app', 'mobile', 'API'."
+        },
+        "version_identifier": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What identifies the studied build (version string or capture note)."
+        },
+        "account_context": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Account state, e.g. 'fresh account, memory enabled'."
+        }
+      }
+    },
+    "observation_window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end"],
+      "properties": {
+        "start": { "type": "string", "format": "date" },
+        "end": { "type": "string", "format": "date" }
+      },
+      "description": "ISO dates bounding when the product was observed."
+    },
+    "last_updated": { "type": "string", "format": "date" },
+    "review_by": { "type": "string", "format": "date" },
+    "authors": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Names or handles of contributors responsible for this teardown."
+    },
+    "conflicts_of_interest": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Declared conflicts, or the literal 'none'. See bias-and-conflicts policy."
+    },
+    "dimensions_covered": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "ux",
+          "agent-behaviour",
+          "memory",
+          "trust",
+          "business-model",
+          "workflow-change"
+        ]
+      },
+      "description": "Which of the six dimensions this teardown covers."
+    }
+  }
+}
