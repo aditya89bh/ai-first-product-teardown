@@ -26,6 +26,7 @@ dev = [
 
 [project.scripts]
 pi-validate = "product_intelligence.audit:main"
+pi-evidence-audit = "product_intelligence.evidence_audit:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
