@@ -1,0 +1,32 @@
+# CANONICAL EVIDENCE-RECORD TEMPLATE
+# Copy into evidence/<product-slug>/<record-id>.yaml and fill every required field.
+# One record = one source supporting one claim (see docs/methodology/citation-standard.md).
+# This file must validate against schemas/evidence-record.schema.json.
+#
+# Field rules:
+#   - id: stable, kebab-case, unique. Teardowns cite this id, never a raw URL.
+#   - type: one of observation | primary | reporting | research | user-report
+#   - evidence_tier: E1..E5 (see docs/methodology/evidence-hierarchy.md). Match tier to type.
+#   - dates: ISO 8601 (YYYY-MM-DD).
+#   - origin: URL, publication, or the literal "first-hand observation".
+#   - archived_ref: required for volatile web sources; a dated snapshot/archive reference.
+#   - unit_ref: REQUIRED when type == observation (identifies the unit of analysis).
+#   - claim_support: state what this source shows AND its limits.
+#   - synthetic: true only for clearly-labelled illustrative examples.
+
+id: example-record-id            # kebab-case, unique
+type: observation                # observation | primary | reporting | research | user-report
+evidence_tier: E1                # E1 | E2 | E3 | E4 | E5
+title: Short human-readable description of the source
+origin: first-hand observation   # URL, publication name, or "first-hand observation"
+published_date: null             # YYYY-MM-DD or null if unknown
+accessed_date: 2026-07-13        # YYYY-MM-DD (required)
+archived_ref: null               # dated snapshot reference; required for volatile web sources
+unit_ref: acme-assistant-free-web-2026-07   # required when type == observation; else null
+claim_support: >-
+  What this source demonstrates, stated precisely, together with what it does NOT show.
+  Example (synthetic): "Shows that a clarifying question appeared in 5 of 5 runs of a fixed
+  prompt on the free web tier on 2026-07-02; does not show behaviour on other tiers." (synthetic)
+tags: []                         # optional free-text tags, e.g. [ux, onboarding]
+synthetic: false                 # true ONLY for labelled illustrative examples
+notes: null                      # optional; provenance caveats, sampling notes, etc.
