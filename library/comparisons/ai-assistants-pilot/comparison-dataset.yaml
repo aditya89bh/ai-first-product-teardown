@@ -1,0 +1,98 @@
+# Cross-product comparison dataset: AI assistants / answer interfaces (pilot)
+# Structured index linking the three pilot teardowns, research dates, dimensions and evidence
+# coverage. This is a machine-readable companion to the per-dimension comparison documents.
+# It deliberately contains NO overall ranking and NO composite scores (see
+# frameworks/cross-product-comparison.md and scoring-false-precision.md).
+
+comparison_slug: ai-assistants-pilot
+title: "Pilot comparison: ChatGPT, Claude, Perplexity as AI assistants / answer interfaces"
+research_window:
+  start: "2026-07-13"
+  end: "2026-07-13"
+method: "documentation-first; public evidence only; no authenticated or paid-plan interaction"
+
+products:
+  - slug: chatgpt
+    surface_studied: "web app + OpenAI Help Center"
+    thesis: "general-purpose assistant / agent platform"
+    evidence_records: 26
+    teardown: "library/products/chatgpt/teardown.md"
+  - slug: claude
+    surface_studied: "web app + Claude support/privacy docs"
+    thesis: "assistant with projects, artifacts and portable memory"
+    evidence_records: 22
+    teardown: "library/products/claude/teardown.md"
+  - slug: perplexity
+    surface_studied: "web app + Perplexity Help Center"
+    thesis: "citation-first answer engine over third-party models"
+    evidence_records: 20
+    teardown: "library/products/perplexity/teardown.md"
+
+# Comparability guardrails carried from the selection rationale.
+comparability:
+  valid_on:
+    - "specific design choices within a single dimension, for the consumer web surface"
+    - "documented data-control and memory models"
+  invalid_on:
+    - "overall 'best assistant' ranking (different product theses)"
+    - "answer-engine vs general-assistant raw capability"
+    - "model capability (all three expose multiple models; Perplexity resells third-party models)"
+    - "cross-plan or cross-region generalisation"
+
+# Per-dimension coverage: how well each product could be evidenced this phase.
+# strength: strong | partial | thin | untested   (documentation coverage, NOT product quality)
+dimension_coverage:
+  ux:
+    chatgpt: partial
+    claude: partial
+    perplexity: partial
+    note: "in-product chat UX untested for all three; only documented affordances + public pages"
+  agent-behaviour:
+    chatgpt: thin
+    claude: thin
+    perplexity: partial
+    note: "behaviour untested for all; Perplexity documents planning visibility most explicitly"
+  memory:
+    chatgpt: strong
+    claude: strong
+    perplexity: thin
+    note: "ChatGPT and Claude have detailed memory docs; Perplexity's Brain is gated + preview"
+  trust:
+    chatgpt: strong
+    claude: strong
+    perplexity: strong
+    note: "all three document data controls; efficacy untested for all"
+  business-model:
+    chatgpt: strong
+    claude: strong
+    perplexity: partial
+    note: "Perplexity standard consumer Pro/Max prices not stated on read pages"
+  workflow-change:
+    chatgpt: untested
+    claude: untested
+    perplexity: untested
+    note: "net workflow effect requires interaction for all three"
+
+# Headline contrasts (each expanded, with evidence, in the per-dimension documents).
+key_contrasts:
+  training_default:
+    chatgpt: "opt-out (Improve the model for everyone; on, can disable)"
+    claude: "opt-in (used only if you choose to allow)"
+    perplexity: "opt-out (AI Data Retention on by default; non-retroactive)"
+    evidence: [cg-data-training-optout, cl-training-optin, px-training-optout-default, px-training-optout-limits]
+  memory_portability:
+    chatgpt: "not documented as portable; deletion spans many surfaces"
+    claude: "import/export across providers (experimental)"
+    perplexity: "Brain (Max preview); portability not documented"
+    evidence: [cg-memory-delete, cl-memory-import-export, px-brain-memory]
+  source_transparency:
+    chatgpt: "personalisation 'sources' affordance; web answers' citation behaviour untested"
+    claude: "web search offered; in-answer citation behaviour untested"
+    perplexity: "inline citations central + visible planning breakdown"
+    evidence: [cg-ux-memory-sources-affordance, cl-web-search, px-citations, px-pro-search-planning-visible]
+
+# Every claim in the comparison documents cites evidence-record ids from these files.
+evidence_sources:
+  chatgpt: "evidence/chatgpt/"
+  claude: "evidence/claude/"
+  perplexity: "evidence/perplexity/"
