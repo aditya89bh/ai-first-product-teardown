@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Lint, type-check, test and audit records
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install project and dev dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Lint (ruff)
+        run: ruff check .
+
+      - name: Type-check (mypy)
+        run: mypy src
+
+      - name: Test (pytest)
+        run: pytest
+
+      - name: Validate structured records (pi-validate)
+        run: pi-validate
+
+      - name: Validate JSON Schema files parse and are well-formed
+        run: python -m json.tool schemas/product-metadata.schema.json > /dev/null &&
+             python -m json.tool schemas/evidence-record.schema.json > /dev/null &&
+             python -m json.tool schemas/scoring-record.schema.json > /dev/null
