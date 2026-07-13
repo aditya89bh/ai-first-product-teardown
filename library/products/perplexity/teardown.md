@@ -197,27 +197,61 @@ end (protocol §2, §3, §6). The dimension is `Not rated` pending interaction.
 
 ## 11. Cross-dimensional findings
 
-_Populated in the synthesis commit._
+- **Agent behaviour ↔ trust ↔ UX.** Perplexity's differentiator is **process transparency**:
+  visible planning (ev: px-pro-search-planning-visible) plus inline citations (ev: px-citations)
+  fuse an agent-behaviour choice, a trust mechanism, and a UX pattern into one design. This is
+  the clearest seam finding of the three products. Confidence: Moderate.
+- **Memory ↔ business model.** Persistent memory (Brain) is positioned as a **premium,
+  preview capability** (ev: px-brain-memory) rather than a core default — a product-strategy
+  choice consistent with the answer-engine thesis. Confidence: Moderate.
+- **Model vs product discipline (acute here).** Perplexity resells third-party models
+  (ev: px-model-choice); its product value is orchestration + citation, so conflating it with
+  any one model's capability would be especially misleading.
 
 ## 12. Scoring record
 
-See `scores.yaml`, added in the synthesis commit.
+See `scores.yaml` (validated). Ordinal, per-sub-area, **no overall product score**.
+Interaction-dependent sub-areas are `Not rated` / `Speculative`.
 
 ## 13. Evidence gaps
 
-_Populated across dimension commits and consolidated in the synthesis commit._
+| Question | Why unanswerable now | How to close |
+| -------- | -------------------- | ------------ |
+| Do citations accurately support the claims they attach to? | Behavioural; core to trust | Interaction protocol §6 |
+| Does the visible "plan" reflect the real process? | Behavioural; untested | Protocol §3, §6 |
+| Brain's controls (view/edit/delete), retention, training | Not documented on pages read; Max-gated preview | Docs + Max interaction §7 |
+| Base-product cross-session memory behaviour | Untested | Protocol §7 |
+| Standard consumer Pro and Max prices | Not stated on read pages | Pricing page / checkout per region |
+| First-use UX, error states, cancellation | No session | Protocol §1, §9, §10 |
 
 ## 14. Limitations
 
-_Populated in the synthesis commit._
+- **Documentation-first.** Most claims are `vendor-self-reported`; efficacy unobserved.
+- **No authenticated/paid interaction.** Free and paid behaviour not exercised.
+- **Model layer.** Perplexity integrates third-party models; product and model must be kept
+  strictly separate, and upstream model terms are out of scope.
+- **Doc recency.** Help articles dated 2026-05-01, read 2026-07-13; findings expiry-sensitive.
+- **Pricing gap.** Only Education Pro ($10/mo) was stated verbatim; other consumer prices are
+  an open gap, not guessed.
+- **No conflict declared** for Perplexity; note it embeds OpenAI and Anthropic models, the
+  makers of the other two pilots.
 
 ## 15. Reproduction instructions
 
-_Populated in the synthesis commit._
+1. Read the five help articles in `source-inventory.md` via a browser (`perplexity.ai`
+   returns 403 to direct fetch). Note the "Last updated on May 1, 2026" stamp.
+2. Compare each quotation in `evidence/perplexity/*.yaml` against the live page on your access
+   date; record drift.
+3. To close §13 gaps — especially **citation accuracy** — run interaction-protocol categories
+   §6 and §2 on an authenticated account, recording plan, region, date and prompts; add
+   `observation`-type records.
+4. Re-run `pi-validate`.
 
 ## 16. Update triggers
 
-_Populated in the synthesis commit._
+Re-review when: Brain leaves preview or its controls are documented; Pro Search behaviour or
+model list changes; the data-retention default or opt-out mechanics change; pricing/tiers
+change; advertising is introduced; or the review-by date (2026-10-13) is reached.
 
 ## 17. Facts, observations, inferences and hypotheses
 

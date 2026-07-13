@@ -1,0 +1,49 @@
+product_slug: perplexity
+teardown_version: 0.1.0
+scored_on: "2026-07-13"
+# Ordinal scores only. No numeric or composite/overall score.
+# 'documented-only' scores judge what the vendor documents, not observed behaviour.
+# Interaction-dependent sub-areas are 'Not rated'/Speculative, never scored negatively.
+scores:
+  - dimension: trust
+    sub_area: "source transparency (citations, documented)"
+    level: Strong
+    confidence: Moderate
+    rationale: "Inline citations and a visible reasoning breakdown are central and documented; citation accuracy in practice is untested."
+    evidence_refs: [px-citations, px-pro-search-planning-visible]
+  - dimension: trust
+    sub_area: "consumer data-control default (documented)"
+    level: Adequate
+    confidence: Moderate
+    rationale: "An opt-out toggle exists but training is on by default and opt-out is non-retroactive; a real limit."
+    evidence_refs: [px-training-optout-default, px-training-optout-limits]
+  - dimension: agent-behaviour
+    sub_area: "planning visibility (documented)"
+    level: Strong
+    confidence: Moderate
+    rationale: "Product documents exposing how it broke down the question and multi-source synthesis; fidelity of the shown plan untested."
+    evidence_refs: [px-pro-search-planning-visible, px-pro-search-steps]
+  - dimension: business-model
+    sub_area: "packaging legibility"
+    level: Adequate
+    confidence: Moderate
+    rationale: "Tier structure and student discount are clear, but standard consumer Pro/Max prices were not stated on the pages read."
+    evidence_refs: [px-plans-overview, px-free-plan-limits]
+  - dimension: memory
+    sub_area: "user-facing memory controls"
+    level: Not rated
+    confidence: Speculative
+    rationale: "Rich memory (Brain) is Max-gated and in preview; its controls/retention were not documented on pages read, so no responsible score is possible."
+    evidence_refs: [px-brain-memory]
+  - dimension: ux
+    sub_area: "in-product answer/citation UX"
+    level: Not rated
+    confidence: Speculative
+    rationale: "No authenticated session; only documentation was read."
+    evidence_refs: [px-ux-direct-answers]
+  - dimension: workflow-change
+    sub_area: "net workflow effect"
+    level: Not rated
+    confidence: Speculative
+    rationale: "Requires running representative research tasks end to end; untested this phase."
+    evidence_refs: [px-pro-search-steps]
