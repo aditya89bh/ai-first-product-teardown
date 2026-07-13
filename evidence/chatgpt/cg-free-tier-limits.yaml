@@ -1,0 +1,17 @@
+id: cg-free-tier-limits
+type: observation
+evidence_tier: E1
+title: "Free tier is bounded ('Limited' messages, uploads, memory, deep research) per pricing page"
+origin: "first-hand observation via in-app browser of https://chatgpt.com/pricing"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: "chatgpt-web-pricing-loggedout-2026-07-13"
+claim_support: >-
+  The observed Free plan card listed "Limited access to GPT-5.5 Instant", "Limited messages
+  and uploads", "Limited and slower image generation", "Limited deep research", "Limited
+  memory and context". Supports the free/paid boundary structure (free is a capped funnel
+  into paid tiers). Exact limits are not quantified by the page ("Limited").
+tags: [business-model, free-tier, packaging]
+synthetic: false
+notes: "plan=Free; region=IN render; directness=direct; confidence=High; product_version=ambiguous"

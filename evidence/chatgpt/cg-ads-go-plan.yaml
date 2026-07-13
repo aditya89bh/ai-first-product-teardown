@@ -1,0 +1,16 @@
+id: cg-ads-go-plan
+type: observation
+evidence_tier: E1
+title: "The 'Go' plan card states it 'may include ads' (directly observed on pricing page)"
+origin: "first-hand observation via in-app browser of https://chatgpt.com/pricing"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: "chatgpt-web-pricing-loggedout-2026-07-13"
+claim_support: >-
+  On the observed pricing page, the Go plan card displayed "This plan may include ads. Learn
+  more". Supports the fact that ChatGPT's monetisation now includes advertising on at least
+  one paid tier. Does not establish ad frequency, format, or presence on other tiers.
+tags: [business-model, advertising, monetisation]
+synthetic: false
+notes: "plan=Go; region=IN render; directness=direct; confidence=High; product_version=ambiguous"

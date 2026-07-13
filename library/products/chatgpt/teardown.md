@@ -161,7 +161,32 @@ evidence.
 
 ## 9. Business-model analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/business-model/framework.md`. Boundary note: this describes how the
+product creates/captures value; it does **not** value the company or forecast revenue._
+
+- `[FACT]` ChatGPT is packaged as a **tiered consumer product** (Free, Go, Plus, Pro) plus
+  Business/Enterprise (ev: cg-plans-overview). Confidence: High.
+- `[FACT]` Pricing is **region-localised**: $20/month Plus in the US help article
+  (ev: cg-plus-identity-price) vs ₹1,999/month in the observed (INR) pricing page
+  (ev: cg-pricing-region-inr). These are not merged into one figure.
+- `[FACT]` The **free tier is a capped funnel** — "Limited" messages, uploads, memory and
+  deep research (ev: cg-free-tier-limits) — with a usage-based **expansion path** into Pro
+  ("5x or 20x more usage") (ev: cg-pro-usage-tiers).
+- `[FACT]` **Advertising** is now part of monetisation: the Go plan card states it "may
+  include ads" (ev: cg-ads-go-plan), corroborated by documented ad controls
+  (ev: cg-ads-controls). Confidence: High that ads exist on at least one tier.
+- `[FACT]` **Data controls are a plan differentiator** (business tiers get more)
+  (ev: cg-business-data-controls).
+- `[INFERENCE]` The model combines **subscription tiers, usage-based upsell, and advertising**
+  — a multi-pronged capture strategy where even a paid tier (Go) may carry ads (ev:
+  cg-ads-go-plan, cg-pro-usage-tiers, cg-free-tier-limits). Confidence: Moderate.
+- `[HYPOTHESIS]` Introducing ads on a *paid* tier suggests pressure to monetise the large
+  free/low-tier base beyond subscriptions — plausible but not evidenced by financials, which
+  are out of scope. Confidence: Speculative.
+
+**Evidence gaps (business model):** revenue, margins, switching costs, distribution deals and
+ecosystem lock-in are **not** evidenced here and are not speculated on. Exact free-tier limits
+are unquantified ("Limited"). Prices are region- and time-sensitive.
 
 ## 10. Workflow-change analysis
 

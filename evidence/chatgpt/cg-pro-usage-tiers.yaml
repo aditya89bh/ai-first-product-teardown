@@ -1,0 +1,17 @@
+id: cg-pro-usage-tiers
+type: observation
+evidence_tier: E1
+title: "Pro plan sold as '5x or 20x more usage' from a higher price point (observed)"
+origin: "first-hand observation via in-app browser of https://chatgpt.com/pricing"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: "chatgpt-web-pricing-loggedout-2026-07-13"
+claim_support: >-
+  The observed Pro plan card showed "From ₹10,699 / month" and "5x or 20x more usage",
+  "Unlimited subject to abuse guardrails". Supports a usage-based expansion path above Plus.
+  Price is region-localised (INR) and "From" indicates variable pricing; not generalisable to
+  other regions.
+tags: [business-model, packaging, expansion-path]
+synthetic: false
+notes: "plan=Pro; region=IN render; directness=direct; confidence=High; product_version=ambiguous"

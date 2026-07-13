@@ -1,0 +1,17 @@
+id: cg-ads-controls
+type: primary
+evidence_tier: E2
+title: "OpenAI documents user controls for ads in ChatGPT"
+origin: "https://help.openai.com/en/articles/7730893-data-controls-faq"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The Data Controls FAQ repeatedly references ad controls: "Learn about controls we offer you
+  for ads here" and a section "What controls do I have related to ads in ChatGPT?".
+  Corroborates cg-ads-go-plan that advertising is part of the product, and shows the vendor
+  offers some ad-related controls. The specific controls were not enumerated on the read page.
+tags: [business-model, advertising, data-controls]
+synthetic: false
+notes: "plan=unspecified; region=global; directness=vendor-self-reported; confidence=Moderate; product_version=ambiguous; triangulates cg-ads-go-plan"
