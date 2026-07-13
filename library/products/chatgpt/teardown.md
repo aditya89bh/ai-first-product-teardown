@@ -130,7 +130,34 @@ Plan/region rollout means even the documented behaviour may not apply to a given
 
 ## 8. Trust and control analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/trust/framework.md`. Data-control surface is well documented;
+in-conversation trust behaviour (uncertainty, source accuracy) is `[UNTESTED]`._
+
+- `[FACT]` A documented, unrestricted **training opt-out** ("Improve the model for everyone")
+  is available signed-in and signed-out; opting out keeps chats in history but excludes them
+  from training, changeable anytime (ev: cg-data-training-optout). Confidence: High that it
+  is documented.
+- `[FACT]` **Temporary Chats** provide an ephemeral mode: deleted after 30 days, not used to
+  train, reviewable "only to monitor for abuse" (ev: cg-temporary-chats-retention).
+- `[FACT]` A documented **control limit**: turning off memory/personalisation "does not
+  disable safety features" that may use limited safety-relevant context in rare, high-risk
+  situations (ev: cg-safety-context). An honest, material caveat to user control.
+- `[FACT]` Data-control capability is **plan-dependent** — Team/Enterprise/Edu offer
+  additional controls (ev: cg-business-data-controls).
+- `[FACT]` **Source transparency** for personalisation is documented via the "sources"
+  affordance (ev: cg-ux-memory-sources-affordance), though the vendor notes it may not show
+  every factor.
+- `[INFERENCE]` ChatGPT's *documented* data-control surface is comparatively detailed and
+  candid about limits (training opt-out, ephemeral chats, an explicit safety-context
+  exception) (ev: cg-data-training-optout, cg-temporary-chats-retention, cg-safety-context).
+  Confidence: Moderate — documentation is candid, but efficacy is unobserved.
+- `[HYPOTHESIS]` Because deletion spans many surfaces (see §7) and a safety-context exception
+  persists, a user's effective control may be weaker than the settings imply — untested.
+
+**Evidence gaps (trust/control):** in-answer uncertainty signalling, citation accuracy,
+reversibility/cancellation of actions, and whether controls behave as documented are all
+`[UNTESTED]` (protocol §6, §8, §9, §10). No sub-area is scored negatively for missing
+evidence.
 
 ## 9. Business-model analysis
 

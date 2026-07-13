@@ -1,0 +1,18 @@
+id: cg-safety-context
+type: primary
+evidence_tier: E2
+title: "Turning off memory/personalisation does not disable safety features that may use limited context"
+origin: "https://help.openai.com/en/articles/7730893-data-controls-faq"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The FAQ states: "turning off Memory and Personalization features does not disable safety
+  features that may use limited, safety-relevant context in rare, high-risk situations to
+  help ChatGPT respond more safely." Supports the fact that some safety-relevant context
+  processing persists regardless of personalisation settings - a material nuance for user
+  control claims. Not independently verifiable.
+tags: [trust, safety, control-limits]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous; control has a documented exception"

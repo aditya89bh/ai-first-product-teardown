@@ -1,0 +1,17 @@
+id: cg-temporary-chats-retention
+type: primary
+evidence_tier: E2
+title: "Temporary Chats deleted after 30 days, not used to train, may be reviewed only for abuse"
+origin: "https://help.openai.com/en/articles/7730893-data-controls-faq"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The FAQ states Temporary Chats "are deleted from our systems after 30 days", "Aren't used
+  to train our models", "May be reviewed only to monitor for abuse" and "Don't get saved in
+  your history and don't create memories". Supports a documented ephemeral mode with a stated
+  retention window. Vendor self-report; retention itself not independently verifiable here.
+tags: [trust, retention, privacy]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

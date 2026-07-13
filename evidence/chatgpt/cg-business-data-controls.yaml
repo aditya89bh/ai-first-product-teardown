@@ -1,0 +1,16 @@
+id: cg-business-data-controls
+type: primary
+evidence_tier: E2
+title: "Team, Enterprise and Edu plans offer additional data controls beyond consumer tiers"
+origin: "https://help.openai.com/en/articles/7730893-data-controls-faq"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The FAQ states: "our Team, Enterprise, and Edu plans offer additional data controls."
+  Supports that data-control capability is plan-dependent, reinforcing that consumer-tier
+  findings must not be generalised to business tiers (and vice versa).
+tags: [trust, data-controls, plan-ambiguity, business-model]
+synthetic: false
+notes: "plan=Team,Enterprise,Edu; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

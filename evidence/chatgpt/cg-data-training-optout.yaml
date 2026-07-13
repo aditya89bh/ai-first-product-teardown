@@ -1,0 +1,18 @@
+id: cg-data-training-optout
+type: primary
+evidence_tier: E2
+title: "Users can turn off 'Improve the model for everyone'; chats remain in history but are not used to train"
+origin: "https://help.openai.com/en/articles/7730893-data-controls-faq"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The Data Controls FAQ states users can "Turn off 'Improve the model for everyone'" and then
+  "Your conversations will still appear in your chat history but won't be used to train
+  ChatGPT", available both signed-in and signed-out, and "you can change this setting anytime.
+  There are no restrictions." Supports a documented, unrestricted training opt-out. Behaviour
+  not independently verified.
+tags: [trust, data-controls, consent]
+synthetic: false
+notes: "plan=all (incl. signed-out); region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"
