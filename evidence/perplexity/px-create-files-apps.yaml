@@ -1,0 +1,18 @@
+id: px-create-files-apps
+type: primary
+evidence_tier: E2
+title: "'Create files and apps' produces reports/dashboards/spreadsheets/web apps (Pro limited, Max minimal limits)"
+origin: "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states Pro includes a "Limited amount Create files and apps queries every 30
+  days" and Max lets you "Create as many reports or projects as you need using advanced tools
+  to create dashboards, spreadsheets, presentations, and web applications." Supports a
+  documented output-generation capability that could restructure research-to-artifact
+  workflows. Behaviour/quality not observed.
+tags: [workflow-change, capabilities, output-generation]
+synthetic: false
+notes: "plan=Pro (limited),Max; region=global; directness=vendor-self-reported; confidence=High; product_version=help-2026-05-01"

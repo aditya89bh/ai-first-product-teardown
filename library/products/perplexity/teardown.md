@@ -172,7 +172,28 @@ pages read (absence is not evidence of absence).
 
 ## 10. Workflow-change analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/workflow-change/framework.md`. Net effect `[UNTESTED]`._
+
+- `[FACT]` Pro Search is documented to **compress the research workflow** — replacing "sifting
+  through pages of search results" with one synthesised, cited answer (ev: px-pro-search-steps,
+  px-ux-direct-answers). Confidence: High that this is the stated design.
+- `[FACT]` **Create files and apps** produces reports, dashboards, spreadsheets and web apps
+  (Pro limited, Max minimal limits) (ev: px-create-files-apps), moving beyond answers into
+  artifacts.
+- `[INFERENCE]` If these work as documented, Perplexity **removes manual search-and-collate
+  steps** and shifts effort toward **verifying citations** — the citation model both compresses
+  and adds a checking step (ev: px-pro-search-steps, px-citations). Confidence: Low — inferred,
+  not observed.
+- `[INFERENCE]` Because answers are inline-cited, the **verification burden is lighter to
+  discharge** than in products where sources are hidden — the user can check in place
+  (ev: px-citations, px-pro-search-planning-visible). Confidence: Low.
+- `[HYPOTHESIS]` For research tasks, an answer engine may reduce total steps more than a
+  general assistant does — but only if citation accuracy holds; otherwise verification cost
+  rises — untested (route: interaction protocol §2, §6).
+
+**Evidence gaps (workflow change):** tasks compressed, steps removed vs added (especially
+citation-checking), and new failure modes require running representative research tasks end to
+end (protocol §2, §3, §6). The dimension is `Not rated` pending interaction.
 
 ## 11. Cross-dimensional findings
 
