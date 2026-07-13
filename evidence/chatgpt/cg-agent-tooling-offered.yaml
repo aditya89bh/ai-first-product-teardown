@@ -1,0 +1,18 @@
+id: cg-agent-tooling-offered
+type: observation
+evidence_tier: E1
+title: "Plan-comparison table lists agentic tools: Search, Deep research, Codex, Scheduled tasks, Projects, built-in browser"
+origin: "first-hand observation via in-app browser of https://chatgpt.com/pricing"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: "chatgpt-web-pricing-loggedout-2026-07-13"
+claim_support: >-
+  The observed feature table names product capabilities including "Search", "Deep research",
+  "Codex", "Scheduled tasks", "Projects", "Built-in browser" and "Workspace agents", tier-gated
+  (several marked "Limited" on Free). Supports the fact that the product offers agentic /
+  tool-using features. It does NOT evidence how well any of them plan, clarify, or recover
+  from failure — those are behavioural and untested this phase.
+tags: [agent-behaviour, tool-use, capabilities]
+synthetic: false
+notes: "plan=all (tier-gated); region=IN render; directness=direct (page), vendor-self-reported (feature claims); confidence=High for offering; product_version=ambiguous"

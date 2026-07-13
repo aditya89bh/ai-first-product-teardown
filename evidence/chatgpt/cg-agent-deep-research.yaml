@@ -1,0 +1,17 @@
+id: cg-agent-deep-research
+type: primary
+evidence_tier: E2
+title: "OpenAI documents 'Deep Research tools (where available)' as a Plus capability"
+origin: "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The Plus article lists "Deep Research tools (where available)" among expanded features.
+  Supports that OpenAI documents a multi-step research capability on Plus. The qualifier
+  "where available" is preserved: availability is not guaranteed, and the feature's actual
+  planning/agentic behaviour was not observed this phase.
+tags: [agent-behaviour, deep-research, capabilities]
+synthetic: false
+notes: "plan=Plus; region=US; directness=vendor-self-reported; confidence=Moderate; product_version=ambiguous; vendor qualifier 'where available'"

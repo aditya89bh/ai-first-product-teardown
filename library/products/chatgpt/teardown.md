@@ -73,7 +73,27 @@ because they require an authenticated chat session. See §13 and the interaction
 
 ## 6. Agent-behaviour analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/agent-behaviour/framework.md`. Behavioural sub-areas are largely
+`[UNTESTED]` (documentation cannot evidence how an agent actually behaves)._
+
+- `[OBS]` The product offers a range of agentic / tool-using features — Search, Deep
+  research, Codex, Scheduled tasks, Projects, a built-in browser and "Workspace agents" —
+  several tier-gated and marked "Limited" on Free (ev: cg-agent-tooling-offered).
+- `[FACT]` OpenAI documents "Deep Research tools (where available)" as a Plus capability
+  (ev: cg-agent-deep-research). The qualifier "where available" is preserved.
+- `[INFERENCE]` The breadth of scheduled/agentic features suggests ChatGPT is positioned as
+  a general-purpose agent platform, not only a chat box (ev: cg-agent-tooling-offered,
+  cg-agent-deep-research). Confidence: Moderate — inferred from the product's own feature
+  listing, not from observed task execution.
+- `[HYPOTHESIS]` The gating of most agentic features behind paid tiers may mean free-tier
+  agent behaviour differs materially from paid-tier behaviour — untested; explicitly do not
+  generalise across plans.
+
+**Evidence gaps (agent behaviour):** task interpretation, planning visibility, clarification
+behaviour, autonomy vs confirmation, failure recovery, user intervention and boundary
+communication are all `[UNTESTED]` and require interaction (protocol §3, §4, §5, §9, §10).
+Documentation lists *that* features exist; it cannot show *how* the agent behaves. These
+sub-areas are `Not rated`, not scored negatively.
 
 ## 7. Memory analysis
 
