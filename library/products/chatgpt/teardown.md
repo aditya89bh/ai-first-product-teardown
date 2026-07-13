@@ -190,7 +190,34 @@ are unquantified ("Limited"). Prices are region- and time-sensitive.
 
 ## 10. Workflow-change analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/workflow-change/framework.md`. This dimension is the hardest to
+evidence without interaction; the **net** workflow effect is `[UNTESTED]`. No superficial
+evidence records were manufactured — existing records are cited._
+
+- `[FACT]` The product offers features whose stated purpose is to **restructure work** —
+  Deep Research (multi-step research), Projects and Scheduled tasks
+  (ev: cg-agent-tooling-offered, cg-agent-deep-research). Confidence: High that these are
+  offered.
+- `[FACT]` Memory is documented to reduce repetition ("so you don't have to repeat yourself
+  as often") (ev: cg-memory-how-it-works) — a claimed workflow compression.
+- `[INFERENCE]` If these features work as documented, ChatGPT shifts some knowledge-work from
+  *doing each step manually* toward *delegating and reviewing* (drafting, research
+  synthesis, scheduled automation) (ev: cg-agent-tooling-offered, cg-agent-deep-research,
+  cg-memory-how-it-works). Confidence: Low — inferred from feature descriptions, not from
+  observed task completion.
+- `[INFERENCE]` The documented memory/personalisation model implies a **new verification
+  burden**: because memory can influence answers invisibly and the "sources" affordance "may
+  not show every factor" (ev: cg-ux-memory-sources-affordance), users acquire a task of
+  checking *why* an answer came out as it did. Confidence: Low.
+- `[HYPOTHESIS]` Delegating research/drafting to the agent may **remove authoring steps but
+  add checking steps** (verifying outputs, correcting memory), so net time saved is
+  task-dependent and may be negative for high-stakes work — untested (route: interaction
+  protocol §3, §5, §6).
+
+**Evidence gaps (workflow change):** tasks actually compressed, steps removed vs added, human
+decision points, coordination changes and new failure modes all require running representative
+tasks end to end (protocol §3–§10). None is scored; the dimension is `Not rated` pending
+interaction.
 
 ## 11. Cross-dimensional findings
 
