@@ -1,0 +1,17 @@
+id: cl-retention-5year
+type: primary
+evidence_tier: E2
+title: "If model-improvement is enabled, data may be retained de-identified up to 5 years"
+origin: "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states: "we may retain your data in a de-identified format for up to 5 years in
+  our model training pipelines" when the model-improvement setting is enabled. Supports a
+  documented, conditional long-retention term - a material trade-off of opting in that a user
+  should weigh.
+tags: [trust, retention, training, trade-off]
+synthetic: false
+notes: "plan=consumer (if opted in); region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

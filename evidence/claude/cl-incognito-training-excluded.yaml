@@ -1,0 +1,17 @@
+id: cl-incognito-training-excluded
+type: primary
+evidence_tier: E2
+title: "Incognito chats are excluded from model training even if model-improvement is enabled"
+origin: "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states: "Your Incognito chats are not used to improve Claude, even if you have
+  enabled Model Improvement in your Privacy Settings." Supports that incognito is a hard
+  carve-out from training, strengthening the incognito control's meaning. Triangulates with
+  cl-incognito (memory) from a different official article.
+tags: [trust, privacy, incognito, training]
+synthetic: false
+notes: "plan=consumer; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous; triangulates cl-incognito"

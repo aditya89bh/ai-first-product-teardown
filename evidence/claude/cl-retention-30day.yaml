@@ -1,0 +1,16 @@
+id: cl-retention-30day
+type: primary
+evidence_tier: E2
+title: "Deleted conversations are removed from back-end storage within 30 days"
+origin: "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The retention article states deleted conversations are "Deleted from our back-end storage
+  systems within 30 days." Supports a documented standard deletion window. Vendor-stated;
+  actual deletion not independently verifiable.
+tags: [trust, retention, deletion]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

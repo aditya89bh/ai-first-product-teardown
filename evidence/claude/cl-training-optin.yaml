@@ -1,0 +1,17 @@
+id: cl-training-optin
+type: primary
+evidence_tier: E2
+title: "Consumer chats are used for model training only if the user chooses to allow it (opt-in)"
+origin: "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The privacy article states model use occurs "if: 1. You choose to allow us to use your
+  chats and coding sessions to improve Claude", i.e. an opt-in via Privacy Settings.
+  Supports that training on consumer data is contingent on the user's choice. Enforcement is
+  vendor-stated and not independently verifiable here.
+tags: [trust, data-controls, consent, training]
+synthetic: false
+notes: "plan=consumer (Free/Pro/Max); region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

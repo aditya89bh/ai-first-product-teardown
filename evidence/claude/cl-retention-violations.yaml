@@ -1,0 +1,17 @@
+id: cl-retention-violations
+type: primary
+evidence_tier: E2
+title: "Policy-violation data retained up to 2 years; safety classification scores up to 7 years"
+origin: "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states for policy violations: "We retain inputs and outputs for up to 2 years
+  and trust and safety classification scores for up to 7 years", and feedback submissions
+  "for 5 years." Supports that some retention persists regardless of user deletion, for
+  safety/compliance reasons - a limit on the '30-day deletion' story.
+tags: [trust, retention, safety, control-limits]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

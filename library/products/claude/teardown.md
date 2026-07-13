@@ -118,7 +118,30 @@ retrieval visibility, and cross-session continuity in practice are `[UNTESTED]`.
 
 ## 8. Trust and control analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/trust/framework.md`. Data-control surface well documented; in-answer
+trust behaviour (uncertainty, citation accuracy) is `[UNTESTED]`._
+
+- `[FACT]` Training on consumer chats is **opt-in** — used only if the user chooses to allow
+  it (ev: cl-training-optin). Confidence: High that this is documented. (Contrast: ChatGPT
+  documents an opt-**out**; see cross-product comparison.)
+- `[FACT]` **Incognito** is a hard carve-out from training even if model-improvement is on
+  (ev: cl-incognito-training-excluded), triangulated with the memory article (ev: cl-incognito).
+- `[FACT]` **Deletion** is documented within 30 days of removal (ev: cl-retention-30day), but
+  **opt-in data may be retained de-identified up to 5 years** (ev: cl-retention-5year) and
+  **safety/violation data persists 2–7 years** (ev: cl-retention-violations) — documented
+  limits on "deletion".
+- `[INFERENCE]` Claude's data-control posture is **opt-in-by-default and candid about
+  retention trade-offs** (5-year opt-in retention, 2–7 year safety retention stated openly)
+  (ev: cl-training-optin, cl-retention-5year, cl-retention-violations). Confidence: Moderate
+  — documentation-based, not verified.
+- `[HYPOTHESIS]` Opt-in training (vs opt-out) may materially reduce the share of consumer data
+  used for training relative to an opt-out product — plausible but unquantified and untested.
+  Confidence: Speculative.
+
+**Evidence gaps (trust/control):** in-answer uncertainty signalling, whether web-search
+answers cite sources accurately, reversibility/cancellation, and whether controls behave as
+documented are `[UNTESTED]` (protocol §6, §8, §9, §10). No sub-area scored negatively for
+missing evidence.
 
 ## 9. Business-model analysis
 
