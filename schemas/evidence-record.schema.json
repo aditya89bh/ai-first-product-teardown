@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/aditya89bh/ai-first-product-teardown/schemas/evidence-record.schema.json",
+  "title": "Evidence Record",
+  "description": "One source supporting one claim. See docs/methodology/citation-standard.md and evidence-hierarchy.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "evidence_tier",
+    "title",
+    "origin",
+    "accessed_date",
+    "claim_support",
+    "synthetic"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stable kebab-case identifier cited by teardowns."
+    },
+    "type": {
+      "type": "string",
+      "enum": ["observation", "primary", "reporting", "research", "user-report"],
+      "description": "Kind of source."
+    },
+    "evidence_tier": {
+      "type": "string",
+      "enum": ["E1", "E2", "E3", "E4", "E5"],
+      "description": "Strength tier from the evidence hierarchy."
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "origin": {
+      "type": "string",
+      "minLength": 1,
+      "description": "URL, publication, or the literal 'first-hand observation'."
+    },
+    "published_date": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "ISO publication date, or null if unknown."
+    },
+    "accessed_date": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO date the source was accessed or the observation was made."
+    },
+    "archived_ref": {
+      "type": ["string", "null"],
+      "description": "Dated snapshot/archive reference; required in practice for volatile web sources."
+    },
+    "unit_ref": {
+      "type": ["string", "null"],
+      "description": "Unit-of-analysis identifier; required when type == observation."
+    },
+    "claim_support": {
+      "type": "string",
+      "minLength": 1,
+      "description": "What this source shows and, explicitly, its limits."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "synthetic": {
+      "type": "boolean",
+      "description": "True only for clearly-labelled illustrative examples."
+    },
+    "notes": { "type": ["string", "null"] }
+  },
+  "allOf": [
+    {
+      "description": "Observations must reference the unit of analysis they were made under.",
+      "if": {
+        "properties": { "type": { "const": "observation" } }
+      },
+      "then": {
+        "properties": {
+          "unit_ref": { "type": "string", "minLength": 1 }
+        },
+        "required": ["unit_ref"]
+      }
+    }
+  ]
+}
