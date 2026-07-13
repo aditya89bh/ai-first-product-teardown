@@ -1,0 +1,17 @@
+id: cl-enterprise-usage-pricing
+type: primary
+evidence_tier: E2
+title: "Team offers premium seats and Enterprise blends seat price with usage at API rates"
+origin: "https://claude.com/pricing"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The pricing page lists Team "Premium seats" at " Per seat / month if billed annually.
+   if billed monthly" and Enterprise as "Seat price + usage at API rates" with "/seat.
+  Usage cost scales with model and task." Supports a documented seat-plus-usage capture model
+  at the top tiers. The page adds pricing may "change at Anthropic's discretion."
+tags: [business-model, packaging, pricing, expansion-path]
+synthetic: false
+notes: "plan=Team,Enterprise; region=US-default; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

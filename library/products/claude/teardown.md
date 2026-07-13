@@ -145,7 +145,29 @@ missing evidence.
 
 ## 9. Business-model analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/business-model/framework.md`. Describes value creation/capture only;
+no company valuation or revenue forecast._
+
+- `[FACT]` Claude is packaged as **Free → Pro → Max → Team → Enterprise**
+  (ev: cl-plans-pricing), with Pro at $17/mo annual ($20 monthly) (ev: cl-pro-price), Max
+  from $100 and Team from $20/seat (ev: cl-max-team-plans), and Enterprise as **seat price +
+  usage at API rates** (ev: cl-enterprise-usage-pricing). Prices read in USD.
+- `[FACT]` Memory is **portable across providers** (import/export) (ev: cl-memory-import-export)
+  — a feature that *lowers* switching costs rather than raising them.
+- `[INFERENCE]` Capture escalates from flat subscription (Pro) to usage-scaled seats
+  (Max/Team/Enterprise), i.e. **more usage-based capture at higher tiers**
+  (ev: cl-max-team-plans, cl-enterprise-usage-pricing). Confidence: Moderate.
+- `[INFERENCE]` Offering portable memory is a **notable anti-lock-in stance**: it reduces a
+  switching cost most competitors leave in place (ev: cl-memory-import-export). Confidence:
+  Moderate. (No advertising was observed on the pages read; we make **no claim** that ads are
+  absent, only that none were evidenced — see gaps.)
+- `[HYPOTHESIS]` Competing on portability and opt-in privacy may be a deliberate
+  differentiation against opt-out, higher-lock-in competitors — plausible, unquantified,
+  Speculative.
+
+**Evidence gaps (business model):** revenue, margins, distribution, and whether any
+advertising exists are **not** evidenced (absence of observed ads is not evidence of absence).
+Region-localised pricing beyond USD was not checked. Prices are time-sensitive.
 
 ## 10. Workflow-change analysis
 
