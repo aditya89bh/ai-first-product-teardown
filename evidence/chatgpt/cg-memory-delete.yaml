@@ -1,0 +1,19 @@
+id: cg-memory-delete
+type: primary
+evidence_tier: E2
+title: "Full deletion of a remembered detail requires deleting every source where it appears"
+origin: "https://help.openai.com/en/articles/8590148-memory-faq"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The FAQ states: "To fully delete something ChatGPT may know about you, you'll need to
+  delete every source where it appears, including past chats, archived chats, files, the
+  memory summary, and disconnect any connected apps." Also: deleting memories and turning
+  memory off "does not delete your past chats", and re-enabling "may create new memories from
+  chats that remain". Supports that deletion is non-trivial and multi-surface. Directly
+  relevant to trust/control; not tested behaviourally.
+tags: [memory, deletion, control, trust]
+synthetic: false
+notes: "plan=varies; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

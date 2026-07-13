@@ -97,7 +97,36 @@ sub-areas are `Not rated`, not scored negatively.
 
 ## 7. Memory analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/memory/framework.md`. This is ChatGPT's best-documented dimension;
+several controls are documented in detail, though their efficacy is `[UNTESTED]`._
+
+- `[FACT]` When enabled, ChatGPT automatically remembers context from chats, files and
+  connected apps, and memory is user-toggleable in Settings > Personalization > Memory
+  (ev: cg-memory-how-it-works). Confidence: High that this is documented.
+- `[FACT]` The product distinguishes two personalisation channels: explicit **Custom
+  Instructions** vs inferred **conversational memory** (ev: cg-memory-vs-custom-instructions).
+- `[FACT]` A **memory summary** lets users view and edit what is remembered, but "Don't
+  mention this again" suppresses rather than deletes (ev: cg-memory-summary-edit).
+- `[FACT]` **Full deletion** of a remembered detail requires deleting every source where it
+  appears (past/archived chats, files, the summary, connected apps); turning memory off does
+  not delete past chats, and re-enabling may re-derive memories (ev: cg-memory-delete).
+- `[FACT]` **Temporary Chats** neither use nor create memories — triangulated across the
+  Memory FAQ and Data Controls FAQ (ev: cg-temporary-chats-memory,
+  cg-temporary-chats-retention). Confidence: High.
+- `[FACT]` The new memory system is **plan- and region-gated** (rolling out to Plus/Pro in
+  the US first) (ev: cg-memory-rollout-region). Memory findings therefore cannot be
+  generalised across plans, regions or time.
+- `[INFERENCE]` ChatGPT's memory model is relatively transparent *as documented* (summary,
+  sources affordance, explicit vs inferred split) but places a **non-trivial deletion
+  burden** on the user, since suppression ≠ deletion and full removal spans many surfaces
+  (ev: cg-memory-summary-edit, cg-memory-delete). Confidence: Moderate — documentation-based.
+- `[HYPOTHESIS]` The gap between "suppress" and "delete" may cause users to believe
+  information is removed when it is only hidden — a potential trust failure mode; untested
+  (route: interaction protocol §7).
+
+**Evidence gaps (memory):** whether edit/delete controls actually behave as documented,
+retrieval visibility in real conversations, and cross-session continuity are `[UNTESTED]`.
+Plan/region rollout means even the documented behaviour may not apply to a given account.
 
 ## 8. Trust and control analysis
 

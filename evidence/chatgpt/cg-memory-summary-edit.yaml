@@ -1,0 +1,17 @@
+id: cg-memory-summary-edit
+type: primary
+evidence_tier: E2
+title: "A 'memory summary' lets users view/edit memory; 'Don't mention this again' does not delete"
+origin: "https://help.openai.com/en/articles/8590148-memory-faq"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The FAQ states users "can see the information that ChatGPT remembers in the memory summary",
+  can edit it by typing changes, and that selecting "Don't mention this again" "helps reduce
+  unwanted references, but it does not delete the information." Supports both an editing
+  affordance AND an important limitation: suppression is not deletion. Not behaviourally tested.
+tags: [memory, editing, transparency, control-limits]
+synthetic: false
+notes: "plan=varies; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous; note: suppression != deletion"

@@ -1,0 +1,18 @@
+id: cg-memory-how-it-works
+type: primary
+evidence_tier: E2
+title: "Memory (when enabled) automatically remembers context from chats, files and connected apps"
+origin: "https://help.openai.com/en/articles/8590148-memory-faq"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The Memory FAQ states: "When enabled, memory helps ChatGPT automatically remember useful
+  context from your chats, files, and connected apps to personalize your experience" and
+  "Memory controls are available in Settings > Personalization > Memory. You can choose to
+  enable or disable memory at any time." Supports that automatic memory exists and is
+  user-toggleable per the vendor. Scope of what is actually retained was not observed.
+tags: [memory, consent, scope]
+synthetic: false
+notes: "plan=varies (rollout); region=global with US-first rollout; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

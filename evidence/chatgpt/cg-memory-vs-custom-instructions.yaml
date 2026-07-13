@@ -1,0 +1,18 @@
+id: cg-memory-vs-custom-instructions
+type: primary
+evidence_tier: E2
+title: "ChatGPT separates explicit Custom Instructions from conversational memory"
+origin: "https://help.openai.com/en/articles/8590148-memory-faq"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The FAQ distinguishes: "Custom Instructions continue to allow you to provide ChatGPT with
+  direct guidance... For explicit information or instructions, you can add it to your Custom
+  Instructions. For information shared via conversations, ChatGPT can remember relevant
+  details for you." Supports that the product models two distinct personalisation channels
+  (explicit vs inferred), relevant to the memory taxonomy used in the cross-product comparison.
+tags: [memory, taxonomy, personalisation]
+synthetic: false
+notes: "plan=varies; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

@@ -1,0 +1,17 @@
+id: cg-temporary-chats-memory
+type: primary
+evidence_tier: E2
+title: "Temporary Chats do not use existing memories or create new memories"
+origin: "https://help.openai.com/en/articles/8590148-memory-faq"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The FAQ states: "Temporary Chats do not use existing memories or create new memories." The
+  Data Controls FAQ corroborates that Temporary Chats "Don't get saved in your history and
+  don't create memories". Supports a documented memory-free mode. Triangulated across two
+  official articles.
+tags: [memory, temporary-chats, control]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous; triangulated with cg-temporary-chats-retention"

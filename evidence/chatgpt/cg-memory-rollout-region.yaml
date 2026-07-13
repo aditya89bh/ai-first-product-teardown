@@ -1,0 +1,18 @@
+id: cg-memory-rollout-region
+type: primary
+evidence_tier: E2
+title: "New memory system rolling out first to Plus/Pro users in the US (plan- and region-gated)"
+origin: "https://help.openai.com/en/articles/8590148-memory-faq"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The FAQ states: "The new memory system is starting to roll out to Plus and Pro users in the
+  US and will be expanding across more ChatGPT plans and countries in the coming weeks."
+  Supports the fact that memory behaviour is plan- and region-dependent and in flux, so
+  memory findings cannot be generalised across plans, regions, or time. Key evidence for
+  plan/region ambiguity (stress hypothesis H-S1).
+tags: [memory, plan-ambiguity, region-ambiguity, recency]
+synthetic: false
+notes: "plan=Plus,Pro (US first); region=US-first; directness=vendor-self-reported; confidence=High; product_version=in-rollout; expiry_sensitive=true"
