@@ -1,0 +1,17 @@
+id: cl-ux-incognito-affordance
+type: primary
+evidence_tier: E2
+title: "Incognito chats are toggled via a 'ghost icon' affordance (documented)"
+origin: "https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states: "When starting a chat outside of a project, you can enable incognito
+  chats by clicking a ghost icon; when this mode is switched on, Claude won't remember your
+  chats." Supports a documented, in-context privacy affordance at the point of starting a
+  chat. Not directly observed this phase.
+tags: [ux, privacy, affordance, trust]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

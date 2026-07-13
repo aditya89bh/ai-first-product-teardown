@@ -1,0 +1,17 @@
+id: cl-ux-memory-settings-location
+type: primary
+evidence_tier: E2
+title: "Memory is viewable/editable via Settings > Capabilities (documented navigation)"
+origin: "https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context"
+published_date: null
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states users can "See exactly what Claude remembers about you by navigating to
+  Settings > Capabilities and clicking 'View and edit memory.'" Supports a documented, single
+  location for inspecting memory. Evidences documented navigation, not observed first-time
+  discoverability.
+tags: [ux, navigation, discoverability, transparency]
+synthetic: false
+notes: "plan=all; region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"

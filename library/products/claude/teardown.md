@@ -44,7 +44,28 @@ See `source-inventory.md` (source-to-evidence map) and §13. Evidence records li
 
 ## 5. User experience analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/ux/framework.md`. Documentation-first; in-product chat UX is
+`[UNTESTED]`._
+
+- `[FACT]` Claude documents distinct interaction surfaces — chat, **Artifacts** (shareable
+  creations), **Projects** (topic-scoped workspaces), Voice Mode and file analysis
+  (ev: cl-identity-capabilities, cl-artifacts, cl-projects). Confidence: High that these are
+  documented.
+- `[FACT]` Memory is inspectable/editable from a single documented location, Settings >
+  Capabilities > "View and edit memory" (ev: cl-ux-memory-settings-location).
+- `[FACT]` A point-of-use privacy affordance is documented: a **ghost icon** toggles
+  incognito chats when starting a chat outside a project (ev: cl-ux-incognito-affordance).
+- `[INFERENCE]` Claude's UX appears to organise work around **persistent, scoped containers**
+  (Projects) plus in-context privacy/memory affordances, suggesting a design emphasis on
+  structured, resumable work (ev: cl-projects, cl-ux-memory-settings-location,
+  cl-ux-incognito-affordance). Confidence: Moderate — documentation-based.
+- `[HYPOTHESIS]` Surfacing an incognito toggle at the moment of starting a chat may make
+  privacy choices more salient than burying them in settings — untested (route: interaction
+  protocol §1, §7).
+
+**Evidence gaps (UX):** first-use orientation, input structure, output/Artifact rendering,
+error states, progressive disclosure and accessibility indicators are `[UNTESTED]` and require
+an authenticated session (protocol §1, §2). Such sub-areas are `Not rated`.
 
 ## 6. Agent-behaviour analysis
 
