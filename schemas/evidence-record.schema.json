@@ -69,7 +69,38 @@
       "type": "boolean",
       "description": "True only for clearly-labelled illustrative examples."
     },
-    "notes": { "type": ["string", "null"] }
+    "notes": { "type": ["string", "null"] },
+    "plan_tier": {
+      "type": ["string", "null"],
+      "description": "Phase 2: plan/tier the claim applies to (e.g. 'Plus', 'Free', 'all'), or null."
+    },
+    "region": {
+      "type": ["string", "null"],
+      "description": "Phase 2: region context (e.g. 'US', 'IN render', 'global'), or null when unspecified."
+    },
+    "evidence_directness": {
+      "type": ["string", "null"],
+      "enum": ["direct", "vendor-self-reported", "indirect", null],
+      "description": "Phase 2: how the source functions as evidence. 'direct' = we observed it; 'vendor-self-reported' = official docs; 'indirect' = credible third-party."
+    },
+    "product_version": {
+      "type": ["string", "null"],
+      "description": "Phase 2: interface/version context, or 'ambiguous' when no version string exists."
+    },
+    "expiry_sensitive": {
+      "type": "boolean",
+      "description": "Phase 2: true when the claim is likely to change soon (pricing, rollouts, previews)."
+    },
+    "untested": {
+      "type": "boolean",
+      "description": "Phase 2: true when this record documents a behaviour that was NOT directly tested."
+    },
+    "contradicts": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "description": "Phase 2: ids of evidence records this one is in tension with (recorded, not hidden)."
+    }
   },
   "allOf": [
     {

@@ -15,3 +15,9 @@ claim_support: >-
 tags: [trust, data-controls, consent, training]
 synthetic: false
 notes: "plan=consumer (Free/Pro/Max); region=global; directness=vendor-self-reported; confidence=High; product_version=ambiguous"
+plan_tier: "consumer (Free/Pro/Max)"
+region: "global"
+evidence_directness: vendor-self-reported
+product_version: ambiguous
+expiry_sensitive: false
+untested: true

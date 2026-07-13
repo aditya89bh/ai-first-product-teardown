@@ -15,3 +15,9 @@ claim_support: >-
 tags: [business-model, pricing, region-ambiguity]
 synthetic: false
 notes: "plan=all; region=IN (observed render region); directness=vendor-self-reported; confidence=High; product_version=ambiguous; documents region-dependence"
+plan_tier: "all"
+region: "IN render"
+evidence_directness: direct
+product_version: ambiguous
+expiry_sensitive: true
+untested: false

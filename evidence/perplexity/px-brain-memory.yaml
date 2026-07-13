@@ -16,3 +16,9 @@ claim_support: >-
 tags: [memory, plan-ambiguity, brain]
 synthetic: false
 notes: "plan=Max (+Computer); region=global; directness=vendor-self-reported; confidence=High; product_version=research-preview; expiry_sensitive=true"
+plan_tier: "Max (+Computer)"
+region: "global"
+evidence_directness: vendor-self-reported
+product_version: research-preview
+expiry_sensitive: true
+untested: true
