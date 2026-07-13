@@ -63,7 +63,30 @@ sub-areas are `Not rated`.
 
 ## 6. Agent-behaviour analysis
 
-_Populated in a later commit._
+_Framework: `frameworks/agent-behaviour/framework.md`. Behavioural quality is `[UNTESTED]`,
+but Perplexity documents unusually specific agent behaviour._
+
+- `[FACT]` Pro Search is a documented **multi-step retrieve-and-synthesise** agent: multiple
+  web searches across source types, compiled from "dozens of sources"
+  (ev: px-pro-search-steps). Confidence: High that this is documented.
+- `[FACT]` **Planning is made visible** — the product shows "how the AI broke down your
+  question and approached the research" (ev: px-pro-search-planning-visible). Notable and
+  differentiating.
+- `[FACT]` Users can **select a model per session** (Sonar, GPT-5, Claude Sonnet 4.6, Gemini
+  3.1 Pro) (ev: px-pro-search-models), and Pro Search includes a **code interpreter**
+  (ev: px-code-interpreter).
+- `[INFERENCE]` Perplexity's agent design emphasises **transparency of process** (visible
+  breakdown + citations) more prominently than the other two products' documentation does
+  (ev: px-pro-search-planning-visible, px-citations). Confidence: Moderate —
+  documentation-based; whether the shown breakdown faithfully mirrors the real process is
+  untested.
+- `[HYPOTHESIS]` Visible planning may aid user trust and correction but could also be
+  post-hoc rationalisation rather than the true process — untested (route: interaction
+  protocol §3, §6).
+
+**Evidence gaps (agent behaviour):** clarification behaviour, autonomy vs confirmation,
+failure recovery, intervention, and whether the visible plan reflects the actual process are
+`[UNTESTED]` (protocol §3–§5, §9). These sub-areas are `Not rated`.
 
 ## 7. Memory analysis
 

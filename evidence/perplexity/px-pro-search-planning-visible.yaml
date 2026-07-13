@@ -1,0 +1,17 @@
+id: px-pro-search-planning-visible
+type: primary
+evidence_tier: E2
+title: "Pro Search exposes how the AI broke down the question (documented planning visibility)"
+origin: "https://www.perplexity.ai/help-center/en/articles/10352903-what-is-pro-search"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states: "You see not just the summary, but also how the AI broke down your
+  question and approached the research." Supports a documented planning-visibility feature - a
+  notable, differentiating agent-behaviour design (making the plan legible). Whether the shown
+  breakdown faithfully reflects the actual process was not observed.
+tags: [agent-behaviour, planning-visibility, transparency]
+synthetic: false
+notes: "plan=Pro; region=global; directness=vendor-self-reported; confidence=High; product_version=help-2026-05-01"

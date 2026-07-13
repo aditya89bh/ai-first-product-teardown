@@ -1,0 +1,17 @@
+id: px-pro-search-models
+type: primary
+evidence_tier: E2
+title: "Pro users can select a model per session (Sonar, GPT-5, Claude Sonnet 4.6, Gemini 3.1 Pro)"
+origin: "https://www.perplexity.ai/help-center/en/articles/10352903-what-is-pro-search"
+published_date: "2026-05-01"
+accessed_date: "2026-07-13"
+archived_ref: null
+unit_ref: null
+claim_support: >-
+  The article states: "Pro users can choose from several state-of-the-art AI models-including
+  Perplexity's own Sonar, OpenAI's GPT-5, Claude Sonnet 4.6, and Gemini 3.1 Pro-each optimized
+  for different types of queries." Supports documented per-session model choice. Model names
+  are the vendor's stated offering; this record makes no capability claim about them.
+tags: [agent-behaviour, model-choice, model-vs-product]
+synthetic: false
+notes: "plan=Pro; region=global; directness=vendor-self-reported; confidence=High; product_version=help-2026-05-01"
