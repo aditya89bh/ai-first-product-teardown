@@ -1,0 +1,61 @@
+product_slug: claude
+teardown_version: 0.1.0
+scored_on: "2026-07-13"
+# Ordinal scores only. No numeric or composite/overall score.
+# 'documented-only' scores judge what the vendor documents, not observed behaviour.
+# Interaction-dependent sub-areas are 'Not rated'/Speculative, never scored negatively.
+scores:
+  - dimension: memory
+    sub_area: "portability and user control (documented)"
+    level: Strong
+    confidence: Moderate
+    rationale: "Import/export across providers, incognito, and view/edit are documented; import is caveated experimental and efficacy untested."
+    evidence_refs: [cl-memory-import-export, cl-incognito]
+  - dimension: memory
+    sub_area: "memory scoping model (documented)"
+    level: Strong
+    confidence: Moderate
+    rationale: "Per-project separate memory spaces are documented, a clearer scoping model than a single global memory."
+    evidence_refs: [cl-memory-projects-separate, cl-ux-memory-settings-location]
+  - dimension: trust
+    sub_area: "training default (opt-in) (documented)"
+    level: Strong
+    confidence: Moderate
+    rationale: "Consumer training is documented as opt-in with a hard incognito carve-out; not independently verified."
+    evidence_refs: [cl-training-optin, cl-incognito-training-excluded]
+  - dimension: trust
+    sub_area: "retention candour (documented)"
+    level: Adequate
+    confidence: Moderate
+    rationale: "Retention terms are stated openly, but opt-in data may persist de-identified up to 5 years and safety data 2-7 years."
+    evidence_refs: [cl-retention-5year, cl-retention-violations]
+  - dimension: business-model
+    sub_area: "anti-lock-in stance (portable memory)"
+    level: Strong
+    confidence: Moderate
+    rationale: "Cross-provider memory portability lowers switching costs; import reliability is caveated."
+    evidence_refs: [cl-memory-import-export, cl-training-optin]
+  - dimension: business-model
+    sub_area: "packaging legibility"
+    level: Adequate
+    confidence: Moderate
+    rationale: "Tiers and prices are clearly presented in USD; region-localised pricing unchecked and terms subject to change."
+    evidence_refs: [cl-plans-pricing, cl-max-team-plans]
+  - dimension: ux
+    sub_area: "in-product chat UX"
+    level: Not rated
+    confidence: Speculative
+    rationale: "No authenticated chat session used; only documentation and the public product page were read."
+    evidence_refs: [cl-identity-capabilities]
+  - dimension: agent-behaviour
+    sub_area: "planning, clarification, failure recovery"
+    level: Not rated
+    confidence: Speculative
+    rationale: "Tools/integrations are offered but behaviour was not observed."
+    evidence_refs: [cl-agent-integrations]
+  - dimension: workflow-change
+    sub_area: "net workflow effect"
+    level: Not rated
+    confidence: Speculative
+    rationale: "Requires running representative tasks end to end; untested this phase."
+    evidence_refs: [cl-projects]

@@ -195,27 +195,72 @@ end (protocol §3–§10). The dimension is `Not rated` pending interaction.
 
 ## 11. Cross-dimensional findings
 
-_Populated in the synthesis commit._
+- **Memory ↔ business model.** Portable, per-project memory (ev: cl-memory-import-export,
+  cl-memory-projects-separate) is simultaneously a memory-control feature and an anti-lock-in
+  business choice — a clean example of a seam finding. Confidence: Moderate.
+- **Trust ↔ business model.** Opt-in training (ev: cl-training-optin) is both a trust posture
+  and a differentiator; it plausibly trades some training data for user trust. Stated as an
+  inference. Confidence: Low.
+- **Model vs product discipline.** No claims are made about the underlying model's capability;
+  only documented product features are assessed.
 
 ## 12. Scoring record
 
-See `scores.yaml`, added in the synthesis commit.
+See `scores.yaml` (validated). Ordinal, per-sub-area, **no overall product score**.
+Interaction-dependent sub-areas are `Not rated` / `Speculative`.
 
 ## 13. Evidence gaps
 
-_Populated across dimension commits and consolidated in the synthesis commit._
+| Question | Why unanswerable now | How to close |
+| -------- | -------------------- | ------------ |
+| Do memory import/export, view/edit behave as documented? | No authenticated session; import is "experimental" | Interaction protocol §7 |
+| First-use orientation, Artifact/output rendering, error states | No chat session | Protocol §1, §2 |
+| Agent planning, clarification, failure recovery, cancellation | Behavioural; untested | Protocol §3–§5, §9, §10 |
+| Does web search cite sources accurately in answers? | Behavioural; untested | Protocol §6, §8 |
+| Any advertising present? | Not evidenced either way | Direct product use across tiers |
+| Non-USD / regional pricing | Read USD only | Access from multiple regions |
 
-## 14. Limitations
+## 14. Limitations and conflict/bias note
 
-_Populated in the synthesis commit (includes the conflict/bias note)._
+**General limitations.** Documentation-first; most claims are `vendor-self-reported` and
+unobserved. No authenticated/paid interaction. Pricing read in USD only. No version string;
+findings dated 2026-07-13 and expiry-sensitive.
+
+**Material conflict/bias disclosure (required).** This pilot was executed **within a Claude
+Code environment** — i.e. the research tooling used to produce the whole library runs on a
+product made by the same company (Anthropic) that makes Claude, the subject of this teardown.
+This is a genuine potential source of bias and is disclosed transparently. Mitigations applied:
+
+- Claude was held to the **identical** documentation-first method, evidence rules, and
+  scoring discipline as ChatGPT and Perplexity; no dimension was scored on more favourable
+  terms.
+- Every Claude claim cites an official Claude/Anthropic source with a faithful quotation and
+  access date, exactly as for the other products.
+- Interaction-dependent claims are marked `[UNTESTED]` for Claude just as for the others; no
+  behavioural advantage was inferred without evidence.
+- The comparison (commits 36–43) makes **no global ranking** and explicitly avoids declaring
+  Claude (or any product) a "winner".
+
+A reader who suspects residual bias should re-run this teardown against the cited sources and
+file a dispute via `docs/governance/corrections-and-disputes.md`. Per repository rules, this
+disclosure lives in the research content and is deliberately **not** placed in Git metadata.
 
 ## 15. Reproduction instructions
 
-_Populated in the synthesis commit._
+1. Retrieve the six sources in `source-inventory.md` (claude.com / support.claude.com /
+   privacy.claude.com were directly fetchable). Note `anthropic.com/pricing` redirects to
+   `claude.com/pricing`.
+2. Compare each quotation in `evidence/claude/*.yaml` against the live page on your access
+   date; record drift.
+3. To close §13 gaps, run the relevant interaction-protocol categories on an authenticated
+   account, recording plan, region, date and prompts; add `observation`-type records.
+4. Re-run `pi-validate`.
 
 ## 16. Update triggers
 
-_Populated in the synthesis commit._
+Re-review when: the memory system, incognito, or import/export changes; the training default
+(opt-in) or retention windows change; pricing/tiers change; advertising is introduced; or the
+review-by date (2026-10-13) is reached.
 
 ## 17. Facts, observations, inferences and hypotheses
 
